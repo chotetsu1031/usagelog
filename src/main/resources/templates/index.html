@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+
+<body>
+  <h1>UsageLogへようこそ</h1>
+  <form method="post" enctype="multipart/form-data" th:action="@{/upload}">
+    <input type="file" name="file" accept=".csv" />
+    <button type="submit">アップロード</button>
+  </form>
+</body>
+
+</html>
