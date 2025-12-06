@@ -1,24 +1,61 @@
 package com.chotetsu.UsageLog.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.chotetsu.UsageLog.model.CsvRecord;
 import com.chotetsu.UsageLog.service.UsageService;
 
 @Controller
+@SessionAttributes("uploadData")
 public class CsvUploadController {
 
-  @Autowired
-  // UserServiceをインスタンス化
-  private UsageService userService;
+  private final UsageService usageService;
+
+  public CsvUploadController(UsageService usageService) {
+    this.usageService = usageService;
+  }
+
+  @ModelAttribute("uploadData")
+  public List<CsvRecord> uploadData() {
+    return new ArrayList<>();
+  }
 
   @PostMapping("/upload")
-  public String uploadCsv(@RequestParam("file") MultipartFile file) {
+  public String uploadCsv(@RequestParam("file") MultipartFile file,
+      @ModelAttribute("uploadData") List<CsvRecord> uploadData) {
+    try {
+      // CSV解析して、List<CsvRecord> に格納する
+      uploadData.clear();
+      uploadData.addAll(usageService.parseCsv(file));
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    return "redirect:/upload/confirm";
+  }
+
+  @GetMapping("/upload/confirm")
+  public String confirm(@ModelAttribute("uploadData") List<CsvRecord> uploadData,
+      Model model) {
+    model.addAttribute("records", uploadData);
+    return "confirm";
+  }
+
+  @PostMapping("/upload/commit")
+  public String commit(@ModelAttribute("uploadData") List<CsvRecord> uploadData, SessionStatus sessionStatus) {
     // CSVデータの登録処理を呼び出す
-    userService.saveCsv(file);
+    usageService.saveAll(uploadData);
     return "success";
   }
 }
