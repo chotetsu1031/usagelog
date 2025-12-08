@@ -22,6 +22,8 @@ import com.chotetsu.UsageLog.repository.UsageRepository;
 @Service
 public class UsageService {
 
+  private final int VALIDATED_USAGE = 1;// 有効
+
   @Autowired
   private UsageRepository usageRepository;
 
@@ -35,6 +37,7 @@ public class UsageService {
       usage.setDescription(r.getDescription());
       usage.setAmount(r.getAmount());
       usage.setCreated_date(LocalDateTime.now());
+      usage.setValidate_flag(VALIDATED_USAGE);// 有効フラグ
 
       // purchase_date は String なのでパースする
       try {
@@ -73,6 +76,7 @@ public class UsageService {
         usage.setCreated_date(ldt);// 登録日
         usage.setAmount(Integer.parseInt(cols[4]));// 金額
         usage.setPurchase_date(sdf.parse(cols[0]));// 購入日
+
         usageRepository.save(usage);
       }
     } catch (IOException e) {
