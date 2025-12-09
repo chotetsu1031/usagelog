@@ -51,42 +51,6 @@ public class UsageService {
     usageRepository.saveAll(usages);
   }
 
-  public void saveCsv(MultipartFile file) {
-    try (BufferedReader reader = new BufferedReader(
-        new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8))) {
-      SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
-      String line;
-      boolean isFirstLine = true;
-
-      while ((line = reader.readLine()) != null) {
-        String[] cols = line.split(",");
-        // 各列の前後のダブルクォートを除去
-        for (int i = 0; i < cols.length; i++) {
-          cols[i] = cols[i].replace("\"", "").trim();
-        }
-        if (isFirstLine) {
-          isFirstLine = false; // 1行目はスキップ
-          continue;
-        }
-
-        Usage usage = new Usage();
-        usage.setUsage_id(UUID.randomUUID());// 利用明細ID
-        usage.setDescription(cols[1]);// 購入内容
-        LocalDateTime ldt = LocalDateTime.now();
-        usage.setCreated_date(ldt);// 登録日
-        usage.setAmount(Integer.parseInt(cols[4]));// 金額
-        usage.setPurchase_date(sdf.parse(cols[0]));// 購入日
-
-        usageRepository.save(usage);
-      }
-    } catch (IOException e) {
-      throw new RuntimeException("CSV読み込みエラー", e);
-    } catch (ParseException e) {
-      // エラー処理（ログ出力やデフォルト値設定など）
-      e.printStackTrace();
-    }
-  }
-
   public List<CsvRecord> parseCsv(MultipartFile file) throws IOException {
     List<CsvRecord> records = new ArrayList<>();
     try (BufferedReader reader = new BufferedReader(
