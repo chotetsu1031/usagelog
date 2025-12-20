@@ -19,17 +19,18 @@ public class Usage {
 
   @Id
   @Column(columnDefinition = "BINARY(16)")
-  private UUID usage_id;
+  private UUID usageId;
   private String description;
   private Integer amount;
-  private String category_id;
+  private Long categoryCd;
+  private String categoryName;
   private String note;
   private Integer validate_flag;
-  private Date purchase_date;
+  private Date purchaseDate;
   private Integer type;
-  private String created_user_id;
-  private String updated_user_id;
-  private LocalDateTime created_date;
-  private LocalDateTime updated_date;
+  private String createdUserId;
+  private String updatedUserId;
+  private LocalDateTime createdDate;
+  private LocalDateTime updatedDate;
   // getter/setter
 }

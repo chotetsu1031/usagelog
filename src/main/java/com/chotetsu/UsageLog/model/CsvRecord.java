@@ -3,8 +3,8 @@ package com.chotetsu.UsageLog.model;
 public class CsvRecord {
   private String description;
   private int amount;
-  private String purchase_date;
-  private int validate_flag;
+  private String purchaseDate;
+  private int validateFlag;
 
   // getter / setter
   public String getDescription() {
@@ -23,19 +23,19 @@ public class CsvRecord {
     this.amount = amount;
   }
 
-  public String getPurchase_date() {
-    return purchase_date;
+  public String getPurchaseDate() {
+    return purchaseDate;
   }
 
-  public void setPurchase_date(String purchase_date) {
-    this.purchase_date = purchase_date;
+  public void setPurchaseDate(String purchaseDate) {
+    this.purchaseDate = purchaseDate;
   }
 
   public int getValidate_flag() {
-    return validate_flag;
+    return validateFlag;
   }
 
-  public void setValidate_flag(int validate_flag) {
-    this.validate_flag = validate_flag;
+  public void setValidate_flag(int validateFlag) {
+    this.validateFlag = validateFlag;
   }
 }

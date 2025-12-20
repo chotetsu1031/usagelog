@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.chotetsu.UsageLog.entity.Category;
 import com.chotetsu.UsageLog.entity.Usage;
 import com.chotetsu.UsageLog.model.CsvRecord;
 import com.chotetsu.UsageLog.repository.UsageRepository;
@@ -26,6 +27,8 @@ public class UsageService {
 
   @Autowired
   private UsageRepository usageRepository;
+  @Autowired
+  private CategoryResolver categoryResolver;
 
   public void saveAll(List<CsvRecord> records) {
     List<Usage> usages = new ArrayList<>();
@@ -33,18 +36,21 @@ public class UsageService {
     for (CsvRecord r : records) {
       Usage usage = new Usage();
 
-      usage.setUsage_id(UUID.randomUUID());
+      usage.setUsageId(UUID.randomUUID());
       usage.setDescription(r.getDescription());
       usage.setAmount(r.getAmount());
-      usage.setCreated_date(LocalDateTime.now());
+      Category category = categoryResolver.resolve(r.getDescription());
+      usage.setCategoryCd(category.getCategoryCd());
+      usage.setCategoryName(category.getCategoryName());
+      usage.setCreatedDate(LocalDateTime.now());
       usage.setValidate_flag(VALIDATED_USAGE);// 有効フラグ
 
-      // purchase_date は String なのでパースする
+      // purchaseDate は String なのでパースする
       try {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
-        usage.setPurchase_date(sdf.parse(r.getPurchase_date()));
+        usage.setPurchaseDate(sdf.parse(r.getPurchaseDate()));
       } catch (ParseException e) {
-        throw new RuntimeException("日付パース失敗: " + r.getPurchase_date(), e);
+        throw new RuntimeException("日付パース失敗: " + r.getPurchaseDate(), e);
       }
       usages.add(usage);
     }
@@ -73,7 +79,7 @@ public class UsageService {
         CsvRecord record = new CsvRecord();
         record.setDescription(values[1]);// 購入内容
         record.setAmount(Integer.parseInt(values[4]));// 金額
-        record.setPurchase_date(values[0]);// 購入日
+        record.setPurchaseDate(values[0]);// 購入日
         records.add(record);
       }
     } catch (IOException e) {
