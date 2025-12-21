@@ -39,6 +39,7 @@ public class UsageService {
       usage.setUsageId(UUID.randomUUID());
       usage.setDescription(r.getDescription());
       usage.setAmount(r.getAmount());
+      // 利用明細の内容からカテゴリを取得する
       Category category = categoryResolver.resolve(r.getDescription());
       usage.setCategoryCd(category.getCategoryCd());
       usage.setCategoryName(category.getCategoryName());
