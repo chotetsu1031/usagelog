@@ -9,19 +9,25 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "category")
+@Table(name = "keyword")
 @Getter
 @Setter
-public class Category {
+public class Keyword {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+  // カテゴリID
+  private Long categoryId;
 
   // カテゴリコード
   private Long categoryCd;
 
   // カテゴリ名
   private String categoryName;
+
+  // 分類キーワード
+  private String keyWord;
 
   // 有効／無効（論理削除）
   private Long validateFlag;

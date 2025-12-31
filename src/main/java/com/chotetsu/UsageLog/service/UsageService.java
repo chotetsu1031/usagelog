@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.chotetsu.UsageLog.entity.Category;
+import com.chotetsu.UsageLog.entity.Keyword;
 import com.chotetsu.UsageLog.entity.Usage;
 import com.chotetsu.UsageLog.model.CsvRecord;
 import com.chotetsu.UsageLog.repository.UsageRepository;
@@ -27,6 +28,8 @@ public class UsageService {
 
   private final int VALIDATED_USAGE = 1;// 有効
   private final int EXPENSE = 2;// 収入
+  private final String RAKUTEN_SOURCE = "1";
+  private final String AEON_SOURCE = "2";
 
   @Autowired
   private UsageRepository usageRepository;
@@ -42,10 +45,17 @@ public class UsageService {
       usage.setUsageId(UUID.randomUUID());
       usage.setDescription(r.getDescription());
       usage.setAmount(r.getAmount());
-      // 利用明細の内容からカテゴリを取得する
-      Category category = categoryResolver.resolve(r.getDescription(), r.getCategoryTips());
-      usage.setCategoryCd(category.getCategoryCd());
-      usage.setCategoryName(category.getCategoryName());
+      if (r.getSource() == RAKUTEN_SOURCE) {
+        // 利用明細のキーワードによってカテゴリを取得する
+        Keyword keyword = categoryResolver.resolveRakuten(r.getDescription());
+        usage.setCategoryCd(keyword.getCategoryCd());
+        usage.setCategoryName(keyword.getCategoryName());
+      } else if (r.getSource() == AEON_SOURCE) {
+        // 利用明細の内容によってカテゴリを取得する
+        Category category = categoryResolver.resolveAeon(r.getCategoryTips());
+        usage.setCategoryCd(category.getCategoryCd());
+        usage.setCategoryName(category.getCategoryName());
+      }
       usage.setCreatedDate(LocalDateTime.now());
       usage.setValidate_flag(VALIDATED_USAGE);// 有効フラグ
       usage.setType(EXPENSE);// 種別
@@ -86,6 +96,7 @@ public class UsageService {
         record.setAmount(Integer.parseInt(values[4]));// 金額
         record.setPurchaseDate(values[0]);// 購入日
         record.setCategoryTips("");
+        record.setSource(RAKUTEN_SOURCE);
         records.add(record);
       }
     } catch (IOException e) {
@@ -133,6 +144,7 @@ public class UsageService {
         } else {
           record.setCategoryTips("");
         }
+        record.setSource(AEON_SOURCE);
         records.add(record);
       }
     } catch (IOException e) {
