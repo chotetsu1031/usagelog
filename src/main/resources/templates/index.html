@@ -9,6 +9,10 @@
 <body>
   <h1>UsageLogへようこそ</h1>
   <form method="post" enctype="multipart/form-data" th:action="@{/upload}">
+    <select name="source" required>
+      <option value="rakuten">楽天</option>
+      <option value="aeon">イオン</option>
+    </select>
     <input type="file" name="file" accept=".csv" />
     <button type="submit">アップロード</button>
   </form>

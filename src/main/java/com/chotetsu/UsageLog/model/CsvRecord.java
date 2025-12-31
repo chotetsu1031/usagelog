@@ -5,6 +5,7 @@ public class CsvRecord {
   private int amount;
   private String purchaseDate;
   private int validateFlag;
+  private String categoryTips;
 
   // getter / setter
   public String getDescription() {
@@ -37,5 +38,13 @@ public class CsvRecord {
 
   public void setValidate_flag(int validateFlag) {
     this.validateFlag = validateFlag;
+  }
+
+  public String getCategoryTips() {
+    return categoryTips;
+  }
+
+  public void setCategoryTips(String categoryTips) {
+    this.categoryTips = categoryTips;
   }
 }

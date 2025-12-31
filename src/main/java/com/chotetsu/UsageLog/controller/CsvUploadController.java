@@ -22,6 +22,8 @@ import com.chotetsu.UsageLog.service.UsageService;
 public class CsvUploadController {
 
   private final UsageService usageService;
+  private final String RAKUTEN_SOURCE = "rakuten";
+  private final String AEON_SOURCE = "aeon";
 
   public CsvUploadController(UsageService usageService) {
     this.usageService = usageService;
@@ -34,11 +36,18 @@ public class CsvUploadController {
 
   @PostMapping("/upload")
   public String uploadCsv(@RequestParam("file") MultipartFile file,
+      @RequestParam("source") String source,
       @ModelAttribute("uploadData") List<CsvRecord> uploadData) {
     try {
+      if (source.equals(RAKUTEN_SOURCE)) {
+        uploadData.clear();
+        uploadData.addAll(usageService.parseRakutenCsv(file));
+      } else if (source.equals(AEON_SOURCE)) {
+        uploadData.clear();
+        uploadData.addAll(usageService.parseAeonCsv(file));
+      }
       // CSV解析して、List<CsvRecord> に格納する
-      uploadData.clear();
-      uploadData.addAll(usageService.parseCsv(file));
+
     } catch (IOException e) {
       e.printStackTrace();
     }
