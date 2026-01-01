@@ -90,7 +90,9 @@ public class UsageService {
           isFirstLine = false; // 1行目はスキップ
           continue;
         }
-
+        if (values[0].isEmpty()) {
+          continue; // 対象データ以外はスキップ
+        }
         CsvRecord record = new CsvRecord();
         record.setDescription(values[1]);// 購入内容
         record.setAmount(Integer.parseInt(values[4]));// 金額
