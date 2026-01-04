@@ -39,15 +39,14 @@ public class CsvUploadController {
       @RequestParam("source") String source,
       @ModelAttribute("uploadData") List<CsvRecord> uploadData) {
     try {
-      if (source.equals(RAKUTEN_SOURCE)) {
+      // CSV解析して、List<CsvRecord> に格納する
+      if (source.equals(RAKUTEN_SOURCE)) { // 楽天の場合
         uploadData.clear();
         uploadData.addAll(usageService.parseRakutenCsv(file));
-      } else if (source.equals(AEON_SOURCE)) {
+      } else if (source.equals(AEON_SOURCE)) { // イオンの場合
         uploadData.clear();
         uploadData.addAll(usageService.parseAeonCsv(file));
       }
-      // CSV解析して、List<CsvRecord> に格納する
-
     } catch (IOException e) {
       e.printStackTrace();
     }

@@ -130,7 +130,7 @@ public class UsageService {
           break; // 対象データでないなら終了
         }
         record.setDescription(values[2]);// 購入内容
-        record.setAmount(Integer.parseInt(values[4]));// 金額
+        record.setAmount(Integer.parseInt(values[6]));// 金額（値引き後）
         String inputDate = year20 + values[0];
         // 入力形式（yyyyMMdd）を定義
         DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("yyyyMMdd");
