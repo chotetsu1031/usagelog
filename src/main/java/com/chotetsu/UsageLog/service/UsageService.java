@@ -30,6 +30,7 @@ public class UsageService {
   private final int EXPENSE = 2;// 収入
   private final String RAKUTEN_SOURCE = "1";
   private final String AEON_SOURCE = "2";
+  private final int UNCATEGORIZED = 10;// 未分類カテゴリコード
 
   @Autowired
   private UsageRepository usageRepository;
@@ -41,20 +42,26 @@ public class UsageService {
 
     for (CsvRecord r : records) {
       Usage usage = new Usage();
-
       usage.setUsageId(UUID.randomUUID());
       usage.setDescription(r.getDescription());
       usage.setAmount(r.getAmount());
+      Keyword keyword = new Keyword();
       if (r.getSource() == RAKUTEN_SOURCE) {
         // 利用明細のキーワードによってカテゴリを取得する
-        Keyword keyword = categoryResolver.resolveRakuten(r.getDescription());
+        keyword = categoryResolver.resolveRakuten(r.getDescription());
         usage.setCategoryCd(keyword.getCategoryCd());
         usage.setCategoryName(keyword.getCategoryName());
       } else if (r.getSource() == AEON_SOURCE) {
         // 利用明細の内容によってカテゴリを取得する
         Category category = categoryResolver.resolveAeon(r.getCategoryTips());
-        usage.setCategoryCd(category.getCategoryCd());
-        usage.setCategoryName(category.getCategoryName());
+        if (UNCATEGORIZED == category.getCategoryCd()) {
+          keyword = categoryResolver.resolveRakuten(r.getDescription());
+          usage.setCategoryCd(keyword.getCategoryCd());
+          usage.setCategoryName(keyword.getCategoryName());
+        } else {
+          usage.setCategoryCd(category.getCategoryCd());
+          usage.setCategoryName(category.getCategoryName());
+        }
       }
       usage.setCreatedDate(LocalDateTime.now());
       usage.setValidate_flag(VALIDATED_USAGE);// 有効フラグ
@@ -142,7 +149,7 @@ public class UsageService {
         String purchaseDate = date.format(outputFormatter);
         record.setPurchaseDate(purchaseDate);// 購入日
         if (values.length > 7) {
-          record.setCategoryTips((values[7].trim()));
+          record.setCategoryTips((values[7].trim().substring(0, 4)));
         } else {
           record.setCategoryTips("");
         }

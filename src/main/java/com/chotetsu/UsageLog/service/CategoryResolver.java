@@ -20,6 +20,7 @@ public class CategoryResolver {
   private final String CATEGORY_FOOD = "５％";
   private final String CATEGORY_CLOTHS_BEAUTY = "１０％";
   private final String CATEGORY_DAILY_USE = "８％";
+  private final String CATEGORY_DAILY_USE2 = "１５％";
 
   public Keyword resolveRakuten(String description) {
     // カテゴリマスタから有効なカテゴリを取得する
@@ -39,19 +40,21 @@ public class CategoryResolver {
 
   public Category resolveAeon(String categoryTips) {
 
-    if (categoryTips.contains(CATEGORY_FOOD)) {
-      return categoryRepository.findByCategoryName("食費")
-          .orElseThrow(() -> new IllegalStateException("食費カテゴリが未定義"));
-    } else if (categoryTips.contains(CATEGORY_CLOTHS_BEAUTY)) {
+    if (categoryTips.contains(CATEGORY_CLOTHS_BEAUTY)) {
       return categoryRepository.findByCategoryName("衣服・美容")
           .orElseThrow(() -> new IllegalStateException("衣服・美容カテゴリが未定義"));
-    } else if (categoryTips.contains(CATEGORY_DAILY_USE)) {
+    } else if (categoryTips.contains(CATEGORY_DAILY_USE)
+        || categoryTips.contains(CATEGORY_DAILY_USE2)) {
       return categoryRepository.findByCategoryName("日用品")
           .orElseThrow(() -> new IllegalStateException("日用品カテゴリが未定義"));
+    } else if (categoryTips.contains(CATEGORY_FOOD)) {
+      return categoryRepository.findByCategoryName("食費")
+          .orElseThrow(() -> new IllegalStateException("食費カテゴリが未定義"));
+    } else {
+      // カテゴリ「未分類」のデータを返す
+      return categoryRepository.findByCategoryName("未分類")
+          // カテゴリ「未分類」のデータが存在しなければエラー
+          .orElseThrow(() -> new IllegalStateException("未分類カテゴリが未定義"));
     }
-    // カテゴリ「未分類」のデータを返す
-    return categoryRepository.findByCategoryName("未分類")
-        // カテゴリ「未分類」のデータが存在しなければエラー
-        .orElseThrow(() -> new IllegalStateException("未分類カテゴリが未定義"));
   }
 }
