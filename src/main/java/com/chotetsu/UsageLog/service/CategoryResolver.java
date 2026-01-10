@@ -57,4 +57,9 @@ public class CategoryResolver {
           .orElseThrow(() -> new IllegalStateException("未分類カテゴリが未定義"));
     }
   }
+
+  public Category getCategoryByCd(Long categoryCd) {
+    return categoryRepository.findById(categoryCd)
+        .orElseThrow(() -> new IllegalStateException("カテゴリが見つかりません: " + categoryCd));
+  }
 }

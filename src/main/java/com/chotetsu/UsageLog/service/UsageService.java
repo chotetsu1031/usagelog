@@ -10,6 +10,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -21,6 +22,7 @@ import com.chotetsu.UsageLog.entity.Category;
 import com.chotetsu.UsageLog.entity.Keyword;
 import com.chotetsu.UsageLog.entity.Usage;
 import com.chotetsu.UsageLog.model.CsvRecord;
+import com.chotetsu.UsageLog.model.FixedExpenseForm;
 import com.chotetsu.UsageLog.repository.UsageRepository;
 
 @Service
@@ -160,5 +162,27 @@ public class UsageService {
       throw new RuntimeException("CSV読み込みエラー", e);
     }
     return records;
+  }
+
+  public void saveFixedExpense(FixedExpenseForm form) {
+    Usage usage = new Usage();
+    usage.setUsageId(UUID.randomUUID());
+    usage.setDescription(form.getDescription());
+    usage.setAmount(form.getAmount());
+    usage.setCategoryCd(form.getCategoryCd());
+    // categoryNameを取得
+    Category category = categoryResolver.getCategoryByCd(form.getCategoryCd());
+    usage.setCategoryName(category.getCategoryName());
+    usage.setValidate_flag(VALIDATED_USAGE);
+    usage.setType(EXPENSE);
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+    try {
+      Date purchaseDate = sdf.parse(form.getPurchaseDate());
+      usage.setPurchaseDate(purchaseDate);
+    } catch (Exception e) {
+      throw new RuntimeException("日付フォーマット設定失敗: " + form.getPurchaseDate(), e);
+    }
+    usage.setCreatedDate(LocalDateTime.now());
+    usageRepository.save(usage);
   }
 }

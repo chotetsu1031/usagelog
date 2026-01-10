@@ -8,6 +8,7 @@
 
 <body>
   <h1>UsageLogへようこそ</h1>
+  <h2>CSVアップロード</h2>
   <form method="post" enctype="multipart/form-data" th:action="@{/upload}">
     <select name="source" required>
       <option value="rakuten">楽天</option>
@@ -16,6 +17,8 @@
     <input type="file" name="file" accept=".csv" />
     <button type="submit">アップロード</button>
   </form>
+  <h2>固定費用登録</h2>
+  <a href="/fixed-expense">固定費用を登録する</a>
 </body>
 
 </html>

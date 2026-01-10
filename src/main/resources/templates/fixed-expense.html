@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>固定費用登録</title>
+</head>
+
+<body>
+  <h1>固定費用登録</h1>
+  <form th:action="@{/fixed-expense}" method="post" th:object="${form}">
+    <div>
+      <label for="description">商品名:</label>
+      <input type="text" id="description" th:field="*{description}" required />
+    </div>
+    <div>
+      <label for="amount">利用金額:</label>
+      <input type="number" id="amount" th:field="*{amount}" required />
+    </div>
+    <div>
+      <label for="categoryCd">カテゴリ:</label>
+      <select id="categoryCd" th:field="*{categoryCd}" required>
+        <option value="">選択してください</option>
+        <option th:each="category : ${categories}" th:value="${category.categoryCd}" th:text="${category.categoryName}">
+        </option>
+      </select>
+    </div>
+    <div>
+      <label for="purchaseDate">利用日:</label>
+      <input type="date" id="purchaseDate" th:field="*{purchaseDate}" required />
+    </div>
+    <button type="submit">保存</button>
+  </form>
+  <div th:if="${param.success}">
+    <p style="color: green;">登録が完了しました。</p>
+  </div>
+</body>
+
+</html>
