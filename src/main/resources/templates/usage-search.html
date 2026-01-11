@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>利用明細検索</title>
+</head>
+
+<body>
+  <h1>利用明細検索</h1>
+    <form th:action="@{/usage-search}" method="post" th:object="${form}">
+      <div>
+        <label for="description">商品名:</label>
+        <input type="text" id="description" th:field="*{description}" />
+      </div>
+      <div>
+        <label for="categoryCd">カテゴリ:</label>
+        <select id="categoryCd" th:field="*{categoryCd}">
+          <option value="">未設定</option>
+          <option th:each="category : ${categories}" th:value="${category.categoryCd}"
+            th:text="${category.categoryName}">
+          </option>
+        </select>
+      </div>
+      <div>
+        <label for="purchaseMonth">利用年月:</label>
+        <select id="purchaseMonth" th:field="*{purchaseMonth}">
+          <option value="">未設定</option>
+          <option th:each="purchaseMonth : ${purchaseMonths}" th:value="${purchaseMonth}" th:text="${purchaseMonth}">
+          </option>
+        </select>
+      </div>
+      <button type="submit">検索</button>
+    </form>
+</body>
+
+</html>

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.chotetsu.UsageLog.entity.Category;
 import com.chotetsu.UsageLog.entity.Keyword;
+import lombok.NonNull;
 import com.chotetsu.UsageLog.repository.CategoryRepository;
 import com.chotetsu.UsageLog.repository.KeywordRepository;
 
@@ -58,7 +59,7 @@ public class CategoryResolver {
     }
   }
 
-  public Category getCategoryByCd(Long categoryCd) {
+  public Category getCategoryByCd(@NonNull Long categoryCd) {
     return categoryRepository.findById(categoryCd)
         .orElseThrow(() -> new IllegalStateException("カテゴリが見つかりません: " + categoryCd));
   }

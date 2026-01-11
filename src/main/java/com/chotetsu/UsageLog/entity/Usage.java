@@ -25,7 +25,7 @@ public class Usage {
   private Long categoryCd;
   private String categoryName;
   private String note;
-  private Integer validate_flag;
+  private Integer validateFlag;
   private Date purchaseDate;
   private Integer type;
   private String createdUserId;

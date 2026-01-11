@@ -66,7 +66,7 @@ public class UsageService {
         }
       }
       usage.setCreatedDate(LocalDateTime.now());
-      usage.setValidate_flag(VALIDATED_USAGE);// 有効フラグ
+      usage.setValidateFlag(VALIDATED_USAGE);// 有効フラグ
       usage.setType(EXPENSE);// 種別
 
       // purchaseDate は String なのでパースする
@@ -173,7 +173,7 @@ public class UsageService {
     // categoryNameを取得
     Category category = categoryResolver.getCategoryByCd(form.getCategoryCd());
     usage.setCategoryName(category.getCategoryName());
-    usage.setValidate_flag(VALIDATED_USAGE);
+    usage.setValidateFlag(VALIDATED_USAGE);
     usage.setType(EXPENSE);
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
     try {
