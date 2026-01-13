@@ -2,10 +2,8 @@ package com.chotetsu.UsageLog.entity;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.UUID;
 
-import org.springframework.cglib.core.Local;
+import java.util.UUID;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
