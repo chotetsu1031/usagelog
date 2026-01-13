@@ -7,11 +7,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.chotetsu.UsageLog.entity.Category;
 import com.chotetsu.UsageLog.entity.Usage;
-import com.chotetsu.UsageLog.model.FixedExpenseForm;
 import com.chotetsu.UsageLog.model.SearchListForm;
 import com.chotetsu.UsageLog.repository.CategoryRepository;
 import com.chotetsu.UsageLog.repository.UsageRepository;

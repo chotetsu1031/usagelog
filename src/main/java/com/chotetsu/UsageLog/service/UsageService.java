@@ -69,11 +69,10 @@ public class UsageService {
       usage.setValidateFlag(VALIDATED_USAGE);// 有効フラグ
       usage.setType(EXPENSE);// 種別
 
-      // purchaseDate は String なのでパースする
       try {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
-        usage.setPurchaseDate(sdf.parse(r.getPurchaseDate()));
-      } catch (ParseException e) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        usage.setPurchaseDate(LocalDate.parse(r.getPurchaseDate(), formatter));
+      } catch (Exception e) {
         throw new RuntimeException("日付パース失敗: " + r.getPurchaseDate(), e);
       }
       usages.add(usage);
@@ -105,7 +104,9 @@ public class UsageService {
         CsvRecord record = new CsvRecord();
         record.setDescription(values[1]);// 購入内容
         record.setAmount(Integer.parseInt(values[4]));// 金額
-        record.setPurchaseDate(values[0]);// 購入日
+        // yyyy/MM/dd を yyyy-MM-dd に変換
+        String formattedDate = values[0].replace("/", "-");
+        record.setPurchaseDate(formattedDate);// 購入日
         record.setCategoryTips("");
         record.setSource(RAKUTEN_SOURCE);
         records.add(record);
@@ -145,8 +146,8 @@ public class UsageService {
         DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("yyyyMMdd");
         // 文字列を LocalDate オブジェクトに変換
         LocalDate date = LocalDate.parse(inputDate, inputFormatter);
-        // 出力形式（yyyy/MM/dd）を定義
-        DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        // 出力形式（yyyy-MM-dd）を定義
+        DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         // フォーマットして出力
         String purchaseDate = date.format(outputFormatter);
         record.setPurchaseDate(purchaseDate);// 購入日
@@ -175,10 +176,9 @@ public class UsageService {
     usage.setCategoryName(category.getCategoryName());
     usage.setValidateFlag(VALIDATED_USAGE);
     usage.setType(EXPENSE);
-    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
     try {
-      Date purchaseDate = sdf.parse(form.getPurchaseDate());
-      usage.setPurchaseDate(purchaseDate);
+      DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+      usage.setPurchaseDate(LocalDate.parse(form.getPurchaseDate(), formatter));
     } catch (Exception e) {
       throw new RuntimeException("日付フォーマット設定失敗: " + form.getPurchaseDate(), e);
     }

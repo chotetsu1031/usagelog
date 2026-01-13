@@ -1,8 +1,11 @@
 package com.chotetsu.UsageLog.entity;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.UUID;
+
+import org.springframework.cglib.core.Local;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -26,7 +29,8 @@ public class Usage {
   private String categoryName;
   private String note;
   private Integer validateFlag;
-  private Date purchaseDate;
+  @Column(columnDefinition = "DATE")
+  private LocalDate purchaseDate;
   private Integer type;
   private String createdUserId;
   private String updatedUserId;
