@@ -13,7 +13,10 @@
   <div class="container mt-5">
 
     <h2 class="mb-4">利用明細一覧</h2>
-
+    <!-- 合計金額 -->
+    <div class="alert alert-info mt-3">
+      <strong>合計金額：</strong><span id="totalAmount">計算中...</span>円
+    </div>
     <!-- データ一覧テーブル -->
     <div class="card shadow-sm">
       <div class="card-body p-0">
@@ -41,7 +44,29 @@
     </div>
 
   </div>
-
+  <script>
+    // ページロード完了時に実行
+    document.addEventListener('DOMContentLoaded', function () {
+      // サーバーに合計金額をGETリクエスト
+      fetch('/api/search/total')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          // JSON文字列をオブジェクトに変換する
+          return response.json();
+        })
+        .then(data => {
+          // 合計金額をフォーマット（３桁区切り）して表示
+          const totalAmount = document.getElementById('totalAmount');
+          totalAmount.textContent = data.totalAmount.toLocaleString();
+        })
+        .catch(error => {
+          console.error('Error fetching total amount:', error);
+          document.getElementById('totalAmount').textContent = 'エラー';
+        });
+    });
+  </script>
 </body>
 
 </html>

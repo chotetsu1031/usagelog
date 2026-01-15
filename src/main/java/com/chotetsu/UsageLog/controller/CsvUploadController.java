@@ -2,7 +2,9 @@ package com.chotetsu.UsageLog.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.multipart.MultipartFile;
@@ -65,5 +68,20 @@ public class CsvUploadController {
     // CSVデータの登録処理を呼び出す
     usageService.saveAll(uploadData);
     return "success";
+  }
+
+  @GetMapping("/api/upload/total")
+  @ResponseBody
+  public Map<String, Object> getTotalAmount(@ModelAttribute("uploadData") List<CsvRecord> uploadData) {
+    // 合計金額を計算
+    int totalAmount = uploadData.stream()
+        .mapToInt(CsvRecord::getAmount)
+        .sum();
+
+    // JSON形式で返す
+    Map<String, Object> response = new HashMap<>();
+    response.put("totalAmount", totalAmount);
+    response.put("recordCount", uploadData.size());
+    return response;
   }
 }
