@@ -1,0 +1,7 @@
+  /* input-groupの中にある各要素に隙間を作る */
+  .input-group select,
+  .input-group input,
+  .input-group button {
+    display: block;
+    margin-bottom: 10px;
+  }

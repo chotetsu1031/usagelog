@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.chotetsu.UsageLog.entity.Category;
 import com.chotetsu.UsageLog.entity.Usage;
-import com.chotetsu.UsageLog.model.CsvRecord;
 import com.chotetsu.UsageLog.model.SearchListForm;
 import com.chotetsu.UsageLog.repository.CategoryRepository;
 import com.chotetsu.UsageLog.repository.UsageRepository;

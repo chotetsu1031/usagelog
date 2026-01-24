@@ -4,20 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Home</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <h2>CSVアップロード画面</h2>
-  <form method="post" enctype="multipart/form-data" th:action="@{/upload}">
-    <select name="source" required>
-      <option value="rakuten">楽天</option>
-      <option value="aeon">イオン</option>
-    </select>
-    <input type="file" name="file" accept=".csv" />
-    <button type="submit">アップロード</button>
+  <form id="uploadForm" method="post" enctype="multipart/form-data" th:action="@{/upload}">
+    <div class="input-group">
+      <select name="source" required>
+        <option value="rakuten">楽天カード</option>
+        <option value="aeon">イオンカード</option>
+      </select>
+      <input type="file" name="file" accept=".csv" required>
+      <button type="submit">アップロード</button>
+    </div>
   </form>
   <a href="/usage-search">利用明細を検索</a><br>
   <a href="/fixed-expense">固定費用を登録</a>
+  </script>
 </body>
 
 </html>
