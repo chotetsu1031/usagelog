@@ -5,3 +5,11 @@
     display: block;
     margin-bottom: 10px;
   }
+
+  .row-group {
+    display: flex;
+    /* 横並び */
+    align-items: center;
+    gap: 40px;
+    /* ファイル入力欄とボタンの間の隙間 */
+  }

@@ -11,12 +11,15 @@
   <h2>CSVアップロード画面</h2>
   <form id="uploadForm" method="post" enctype="multipart/form-data" th:action="@{/upload}">
     <div class="input-group">
+
       <select name="source" required>
         <option value="rakuten">楽天カード</option>
         <option value="aeon">イオンカード</option>
       </select>
-      <input type="file" name="file" accept=".csv" required>
-      <button type="submit">アップロード</button>
+      <div class="row-group">
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">アップロード</button>
+      </div>
     </div>
   </form>
   <a href="/usage-search">利用明細を検索</a><br>
