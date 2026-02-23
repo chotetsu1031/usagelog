@@ -21,6 +21,7 @@ import com.chotetsu.UsageLog.entity.Usage;
 import com.chotetsu.UsageLog.model.CsvRecord;
 import com.chotetsu.UsageLog.model.FixedExpenseForm;
 import com.chotetsu.UsageLog.repository.UsageRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class UsageService {
@@ -35,6 +36,17 @@ public class UsageService {
   private UsageRepository usageRepository;
   @Autowired
   private CategoryResolver categoryResolver;
+
+  @Transactional
+  public void updateCategoryForUsages(List<UUID> usageIds, Long categoryCd) {
+    if (usageIds == null || usageIds.isEmpty() || categoryCd == null) {
+      return;
+    }
+    // カテゴリ名称を取得して一括更新
+    com.chotetsu.UsageLog.entity.Category category = categoryResolver.getCategoryByCd(categoryCd);
+    String categoryName = category.getCategoryName();
+    usageRepository.updateCategoryByIds(usageIds, categoryCd, categoryName);
+  }
 
   public void saveAll(List<CsvRecord> records) {
     List<Usage> usages = new ArrayList<>();

@@ -16,15 +16,21 @@ import com.chotetsu.UsageLog.entity.Usage;
 import com.chotetsu.UsageLog.model.SearchListForm;
 import com.chotetsu.UsageLog.repository.CategoryRepository;
 import com.chotetsu.UsageLog.repository.UsageRepository;
+import com.chotetsu.UsageLog.model.CategoryUpdateRequest;
+import com.chotetsu.UsageLog.service.UsageService;
+import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
 public class UsageSearchController {
   private final CategoryRepository categoryRepository;
   private final UsageRepository usageRepository;
+  private final UsageService usageService;
 
-  public UsageSearchController(CategoryRepository categoryRepository, UsageRepository usageRepository) {
+  public UsageSearchController(CategoryRepository categoryRepository, UsageRepository usageRepository,
+      UsageService usageService) {
     this.categoryRepository = categoryRepository;
     this.usageRepository = usageRepository;
+    this.usageService = usageService;
   }
 
   @GetMapping("/usage-search")
@@ -39,9 +45,11 @@ public class UsageSearchController {
 
   @PostMapping("/usage-search")
   public String showList(@ModelAttribute("form") SearchListForm form, Model model) {
-    List<Usage> usages = usageRepository.findBySearchUsageLog(form);
+    List<Usage> usages = usageRepository.findBySearchUsageLog(form.getPurchaseMonth(), form.getCategoryCd());
     model.addAttribute("usages", usages);
     model.addAttribute("form", form);
+    List<Category> categories = categoryRepository.findAllActive();
+    model.addAttribute("categories", categories);
     return "usage-list";
   }
 
@@ -49,7 +57,7 @@ public class UsageSearchController {
   @ResponseBody
   public Map<String, Object> getTotalAmount(@ModelAttribute("form") SearchListForm form) {
     // 検索結果から合計金額を計算
-    List<Usage> usages = usageRepository.findBySearchUsageLog(form);
+    List<Usage> usages = usageRepository.findBySearchUsageLog(form.getPurchaseMonth(), form.getCategoryCd());
     int totalAmount = usages.stream()
         .mapToInt(Usage::getAmount)
         .sum();
@@ -59,5 +67,21 @@ public class UsageSearchController {
     response.put("totalAmount", totalAmount);
     response.put("recordCount", usages.size());
     return response;
+  }
+
+  @PostMapping("/api/usage/update-category")
+  @ResponseBody
+  public Map<String, Object> updateCategory(@RequestBody CategoryUpdateRequest req) {
+    try {
+      usageService.updateCategoryForUsages(req.getUsageIds(), req.getCategoryCd());
+      Map<String, Object> res = new HashMap<>();
+      res.put("status", "success");
+      return res;
+    } catch (Exception e) {
+      Map<String, Object> res = new HashMap<>();
+      res.put("status", "error");
+      res.put("message", e.getMessage());
+      return res;
+    }
   }
 }

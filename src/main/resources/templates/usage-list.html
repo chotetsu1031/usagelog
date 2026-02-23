@@ -1,72 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>利用明細一覧</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>利用明細一覧</title>
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-</head>
-
-<body class="bg-light">
-
-  <div class="container mt-5">
-
-    <h2 class="mb-4">利用明細一覧</h2>
-    <!-- 合計金額 -->
-    <div class="alert alert-info mt-3">
-      <strong>合計金額：</strong><span id="totalAmount">計算中...</span>円
-    </div>
-    <!-- データ一覧テーブル -->
-    <div class="card shadow-sm">
-      <div class="card-body p-0">
-        <table class="table table-bordered table-hover mb-0">
-          <thead class="table-secondary">
-            <tr>
-              <th>No</th>
-              <th>購入内容</th>
-              <th>金額（円）</th>
-              <th>購入日</th>
-              <th>カテゴリ</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr th:each="rec, stat : ${usages}">
-              <td th:text="${stat.count}"></td>
-              <td th:text="${rec.description}"></td>
-              <td th:text="${rec.amount}"></td>
-              <td th:text="${rec.purchaseDate}"></td>
-              <td th:text="${rec.categoryName}"></td>
-            </tr>
-          </tbody>
-        </table>
+  <body class="bg-light">
+    <div id="categoryUpdateApp">
+      <div class="container mt-5">
+        <h2 class="mb-4">利用明細一覧</h2>
+        <div class="mb-3">
+          <button
+            class="btn btn-primary"
+            @click="openModal"
+            :disabled="selectedIds.length===0"
+          >
+            カテゴリ更新
+          </button>
+          <span class="ms-2 text-muted">選択数: {{ selectedIds.length }}</span>
+        </div>
+        <!-- データ一覧テーブル -->
+        <div class="card shadow-sm">
+          <div class="card-body p-0">
+            <table class="table table-bordered table-hover mb-0">
+              <thead class="table-secondary">
+                <tr>
+                  <th style="width: 40px"></th>
+                  <th>No</th>
+                  <th>購入内容</th>
+                  <th>金額（円）</th>
+                  <th>購入日</th>
+                  <th>カテゴリ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr th:each="rec, stat : ${usages}">
+                  <td>
+                    <input
+                      type="checkbox"
+                      v-model="selectedIds"
+                      th:value="${rec.usageId}"
+                    />
+                  </td>
+                  <td th:text="${stat.count}"></td>
+                  <td th:text="${rec.description}"></td>
+                  <td th:text="${rec.amount}"></td>
+                  <td th:text="${rec.purchaseDate}"></td>
+                  <td th:text="${rec.categoryName}"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Vue アプリとモーダル -->
+      <!-- Bootstrap モーダル -->
+      <div
+        class="modal fade"
+        id="categoryModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">カテゴリ一括更新</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label class="form-label">カテゴリを選択</label>
+                <select id="modalCategory" class="form-select">
+                  <option value="">選択してください</option>
+                  <option
+                    th:each="category : ${categories}"
+                    th:value="${category.categoryCd}"
+                    th:text="${category.categoryName}"
+                  ></option>
+                </select>
+              </div>
+              <p class="text-muted">
+                選択件数: <strong>{{ selectedIds.length }}</strong>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                キャンセル
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                @click="updateCategory"
+              >
+                更新
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-  </div>
-  <script>
-    // ページロード完了時に実行
-    document.addEventListener('DOMContentLoaded', function () {
-      // サーバーに合計金額をGETリクエスト
-      fetch('/api/search/total')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          // JSON文字列をオブジェクトに変換する
-          return response.json();
-        })
-        .then(data => {
-          // 合計金額をフォーマット（３桁区切り）して表示
-          const totalAmount = document.getElementById('totalAmount');
-          totalAmount.textContent = data.totalAmount.toLocaleString();
-        })
-        .catch(error => {
-          console.error('Error fetching total amount:', error);
-          document.getElementById('totalAmount').textContent = 'エラー';
-        });
-    });
-  </script>
-</body>
-
+    <!-- Vue + Bootstrap JS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const { createApp } = Vue;
+      createApp({
+        data() {
+          return { selectedIds: [] };
+        },
+        methods: {
+          openModal() {
+            if (this.selectedIds.length === 0) {
+              alert("更新対象を選択してください");
+              return;
+            }
+            const modalEl = document.getElementById("categoryModal");
+            const modal = new bootstrap.Modal(modalEl);
+            modal.show();
+          },
+          updateCategory() {
+            const sel = document.getElementById("modalCategory").value;
+            if (!sel) {
+              alert("カテゴリを選択してください");
+              return;
+            }
+            const payload = {
+              usageIds: this.selectedIds,
+              categoryCd: Number(sel),
+            };
+            fetch("/api/usage/update-category", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload),
+            })
+              .then((r) => r.json())
+              .then((data) => {
+                if (data.status === "success") {
+                  location.reload();
+                } else {
+                  alert("更新に失敗しました: " + (data.message || ""));
+                }
+              })
+              .catch((err) => {
+                console.error(err);
+                alert("更新中にエラーが発生しました");
+              });
+          },
+        },
+      }).mount("#categoryUpdateApp");
+    </script>
+    <script>
+      // ページロード完了時に実行
+      document.addEventListener("DOMContentLoaded", function () {
+        // サーバーに合計金額をGETリクエスト
+        fetch("/api/search/total")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            // JSON文字列をオブジェクトに変換する
+            return response.json();
+          })
+          .then((data) => {
+            // 合計金額をフォーマット（３桁区切り）して表示
+            const totalAmount = document.getElementById("totalAmount");
+            totalAmount.textContent = data.totalAmount.toLocaleString();
+          })
+          .catch((error) => {
+            console.error("Error fetching total amount:", error);
+            document.getElementById("totalAmount").textContent = "エラー";
+          });
+      });
+    </script>
+    <a th:href="@{/}">トップページへ戻る</a>
+  </body>
 </html>
