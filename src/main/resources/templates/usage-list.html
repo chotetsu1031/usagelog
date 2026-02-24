@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
-    <title>利用明細一覧</title>
+    <title>UsageLog - 利用明細一覧</title>
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -11,9 +11,21 @@
   </head>
 
   <body class="bg-light">
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">📊 UsageLog</a>
+        <div class="navbar-nav">
+          <a class="nav-link" href="/">ホーム</a>
+          <a class="nav-link active" href="/usage-search">明細検索</a>
+          <a class="nav-link" href="/fixed-expense">固定費登録</a>
+        </div>
+      </div>
+    </nav>
+
     <div id="categoryUpdateApp">
       <div class="container mt-5">
-        <h2 class="mb-4">利用明細一覧</h2>
+        <h2 class="mb-4 text-primary">📄 利用明細一覧</h2>
         <div class="mb-3">
           <button
             class="btn btn-primary"
@@ -23,6 +35,10 @@
             カテゴリ更新
           </button>
           <span class="ms-2 text-muted">選択数: {{ selectedIds.length }}</span>
+        </div>
+        <!-- 合計金額 -->
+        <div class="alert alert-info">
+          <strong>合計金額：</strong><span id="totalAmount">計算中...</span>円
         </div>
         <!-- データ一覧テーブル -->
         <div class="card shadow-sm">
@@ -187,6 +203,8 @@
           });
       });
     </script>
-    <a th:href="@{/}">トップページへ戻る</a>
+    <div class="container mt-3 mb-5">
+      <a th:href="@{/}" class="btn btn-outline-secondary">← トップページへ戻る</a>
+    </div>
   </body>
 </html>

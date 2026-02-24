@@ -1,92 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UsageLog - 登録内容の確認</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>登録内容の確認</title>
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-</head>
+  <body class="bg-light">
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">📊 UsageLog</a>
+        <div class="navbar-nav">
+          <a class="nav-link" href="/">ホーム</a>
+          <a class="nav-link" href="/usage-search">明細検索</a>
+          <a class="nav-link" href="/fixed-expense">固定費登録</a>
+        </div>
+      </div>
+    </nav>
 
-<body class="bg-light">
+    <div class="container mt-5">
+      <h2 class="mb-4 text-primary">📋 CSV 登録内容の確認</h2>
 
-  <div class="container mt-5">
+      <p>以下の内容で登録してよろしいですか？</p>
+      <!-- 合計金額 -->
+      <div class="alert alert-info mt-3">
+        <strong>合計金額：</strong><span id="totalAmount">計算中...</span>円
+      </div>
+      <!-- データ一覧テーブル -->
+      <div class="card shadow-sm">
+        <div class="card-body p-0">
+          <table class="table table-bordered table-hover mb-0">
+            <thead class="table-secondary">
+              <tr>
+                <th>No</th>
+                <th>購入内容</th>
+                <th>金額（円）</th>
+                <th>購入日</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr th:each="rec, stat : ${records}">
+                <td th:text="${stat.count}"></td>
+                <td th:text="${rec.description}"></td>
+                <td th:text="${rec.amount}"></td>
+                <td th:text="${rec.purchaseDate}"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-    <h2 class="mb-4">CSV 登録内容の確認</h2>
+      <!-- エラーがあれば表示 -->
+      <div class="alert alert-danger mt-3" th:if="${errors}">
+        <ul>
+          <li th:each="err : ${errors}" th:text="${err}"></li>
+        </ul>
+      </div>
 
-    <p>以下の内容で登録してよろしいですか？</p>
-    <!-- 合計金額 -->
-    <div class="alert alert-info mt-3">
-      <strong>合計金額：</strong><span id="totalAmount">計算中...</span>円
-    </div>
-    <!-- データ一覧テーブル -->
-    <div class="card shadow-sm">
-      <div class="card-body p-0">
-        <table class="table table-bordered table-hover mb-0">
-          <thead class="table-secondary">
-            <tr>
-              <th>No</th>
-              <th>購入内容</th>
-              <th>金額（円）</th>
-              <th>購入日</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr th:each="rec, stat : ${records}">
-              <td th:text="${stat.count}"></td>
-              <td th:text="${rec.description}"></td>
-              <td th:text="${rec.amount}"></td>
-              <td th:text="${rec.purchaseDate}"></td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- ボタン -->
+      <div class="mt-4 d-flex gap-3">
+        <a href="/" class="btn btn-outline-secondary"> 戻る </a>
+
+        <form th:action="@{/upload/commit}" method="post">
+          <button class="btn btn-primary" type="submit">登録する</button>
+        </form>
       </div>
     </div>
 
-    <!-- エラーがあれば表示 -->
-    <div class="alert alert-danger mt-3" th:if="${errors}">
-      <ul>
-        <li th:each="err : ${errors}" th:text="${err}"></li>
-      </ul>
-    </div>
-
-    <!-- ボタン -->
-    <div class="mt-4 d-flex gap-3">
-      <a href="/" class="btn btn-outline-secondary">
-        戻る
-      </a>
-
-      <form th:action="@{/upload/commit}" method="post">
-        <button class="btn btn-primary" type="submit">
-          登録する
-        </button>
-      </form>
-    </div>
-
-  </div>
-
-  <script>
-    // ページロード時に合計金額を取得
-    document.addEventListener('DOMContentLoaded', function () {
-      fetch('/api/upload/total')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.json();
-        })
-        .then(data => {
-          // 合計金額をフォーマット（３桁区切り）して表示
-          const totalAmount = document.getElementById('totalAmount');
-          totalAmount.textContent = data.totalAmount.toLocaleString();
-        })
-        .catch(error => {
-          console.error('Error fetching total amount:', error);
-          document.getElementById('totalAmount').textContent = 'エラー';
-        });
-    });
-  </script>
-
-</body>
-
+    <script>
+      // ページロード時に合計金額を取得
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/api/upload/total")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            // 合計金額をフォーマット（３桁区切り）して表示
+            const totalAmount = document.getElementById("totalAmount");
+            totalAmount.textContent = data.totalAmount.toLocaleString();
+          })
+          .catch((error) => {
+            console.error("Error fetching total amount:", error);
+            document.getElementById("totalAmount").textContent = "エラー";
+          });
+      });
+    </script>
+  </body>
 </html>
