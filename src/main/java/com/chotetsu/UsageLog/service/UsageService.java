@@ -21,8 +21,12 @@ import com.chotetsu.UsageLog.entity.Usage;
 import com.chotetsu.UsageLog.model.CsvRecord;
 import com.chotetsu.UsageLog.model.FixedExpenseForm;
 import com.chotetsu.UsageLog.repository.UsageRepository;
+
+import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.transaction.annotation.Transactional;
 
+@Slf4j
 @Service
 public class UsageService {
 
@@ -31,6 +35,7 @@ public class UsageService {
   private final String RAKUTEN_SOURCE = "1";
   private final String AEON_SOURCE = "2";
   private final int UNCATEGORIZED = 10;// 未分類カテゴリコード
+  private final String PERCENT = "％";// パーセント
 
   @Autowired
   private UsageRepository usageRepository;
@@ -111,10 +116,13 @@ public class UsageService {
           continue; // 対象データ以外はスキップ
         }
         CsvRecord record = new CsvRecord();
+        log.info("購入内容：{}", values[1]);
         record.setDescription(values[1]);// 購入内容
+        log.info("金額：{}", values[4]);
         record.setAmount(Integer.parseInt(values[4]));// 金額
         // yyyy/MM/dd を yyyy-MM-dd に変換
         String formattedDate = values[0].replace("/", "-");
+        log.info("購入日：{}", formattedDate);
         record.setPurchaseDate(formattedDate);// 購入日
         record.setCategoryTips("");
         record.setSource(RAKUTEN_SOURCE);
@@ -148,7 +156,9 @@ public class UsageService {
         if (endStr.equals(values[0])) {
           break; // 対象データでないなら終了
         }
+        log.info("購入内容：{}", values[2]);
         record.setDescription(values[2]);// 購入内容
+        log.info("金額（値引き後）：{}", values[6]);
         record.setAmount(Integer.parseInt(values[6]));// 金額（値引き後）
         String inputDate = year20 + values[0];
         // 入力形式（yyyyMMdd）を定義
@@ -159,8 +169,9 @@ public class UsageService {
         DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         // フォーマットして出力
         String purchaseDate = date.format(outputFormatter);
+        log.info("購入日：{}", purchaseDate);
         record.setPurchaseDate(purchaseDate);// 購入日
-        if (values.length > 7) {
+        if (values.length > 7 && values[7].contains(PERCENT)) {
           record.setCategoryTips((values[7].trim().substring(0, 4)));
         } else {
           record.setCategoryTips("");

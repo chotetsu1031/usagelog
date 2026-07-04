@@ -1,0 +1,1251 @@
+2026-07-04 13:26:24.918 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 22 with PID 26108 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 13:26:24.918 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 13:26:25.113 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 13:26:25.124 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2026-07-04 13:26:25.219 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-04 13:26:25.219 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:26:25.219 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-04 13:26:25.219 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-04 13:26:25.237 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-04 13:26:25.238 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 320 ms
+2026-07-04 13:26:25.301 WARN  o.a.c.c.C.[Tomcat].[localhost].[/] - Cannot deserialize session attribute [uploadData] for session [5209D65A6412C499EC40FBF4B3D88FDE]
+2026-07-04 13:26:25.347 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 13:26:25.347 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-04 13:26:25.364 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 13:26:25.373 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-07-04 13:26:25.397 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4036b185
+2026-07-04 13:26:25.397 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-07-04 13:26:25.463 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 13:26:25.466 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:26:25.630 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 13:26:25.656 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-04 13:26:25.881 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-04 13:26:25.881 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-04 13:26:25.897 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:26:25.914 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-04 13:26:25.914 INFO  c.c.UsageLog.UsageLogApplication - Started UsageLogApplication in 1.018 seconds (process running for 359.902)
+2026-07-04 13:26:25.922 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-04 13:26:56.532 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:26:56.532 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-07-04 13:26:56.540 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-07-04 13:28:44.176 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 22 with PID 20776 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 13:28:44.178 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 13:28:44.214 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-04 13:28:44.214 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-04 13:28:44.866 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 13:28:44.914 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2026-07-04 13:28:45.465 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-04 13:28:45.465 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:28:45.477 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-04 13:28:45.478 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-04 13:28:45.517 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-04 13:28:45.519 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1302 ms
+2026-07-04 13:28:45.741 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 13:28:45.784 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-04 13:28:45.800 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-04 13:28:45.966 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 13:28:45.985 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-04 13:28:46.215 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56c413b5
+2026-07-04 13:28:46.215 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-04 13:28:46.829 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 13:28:46.867 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:28:47.067 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-04 13:28:47.663 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 13:28:47.702 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-04 13:28:48.151 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-04 13:28:48.160 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-04 13:28:48.216 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:28:48.241 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-04 13:28:48.252 INFO  c.c.UsageLog.UsageLogApplication - Started UsageLogApplication in 4.467 seconds (process running for 4.794)
+2026-07-04 13:29:16.956 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-04 13:29:16.956 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-04 13:29:16.959 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-07-04 13:29:23.881 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＬＡＢＩＬＩＦＥＳＥＬＥＣＴ千
+2026-07-04 13:29:23.882 INFO  c.c.UsageLog.service.UsageService - 金額：53880
+2026-07-04 13:29:23.882 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 13:29:23.883 INFO  c.c.UsageLog.service.UsageService - 購入内容：FERIA
+2026-07-04 13:29:23.883 INFO  c.c.UsageLog.service.UsageService - 金額：5400
+2026-07-04 13:29:23.884 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 13:29:23.885 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾐﾉｵｷﾕ-ｽﾞﾓ-ﾙ
+2026-07-04 13:29:23.885 INFO  c.c.UsageLog.service.UsageService - 金額：3000
+2026-07-04 13:29:23.885 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 13:29:23.886 INFO  c.c.UsageLog.service.UsageService - 購入内容：AMAZON.CO.JP
+2026-07-04 13:29:23.886 INFO  c.c.UsageLog.service.UsageService - 金額：4794
+2026-07-04 13:29:23.886 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 13:29:23.887 INFO  c.c.UsageLog.service.UsageService - 購入内容：ニトリ
+2026-07-04 13:29:23.887 INFO  c.c.UsageLog.service.UsageService - 金額：6980
+2026-07-04 13:29:23.887 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-30
+2026-07-04 13:29:23.887 INFO  c.c.UsageLog.service.UsageService - 購入内容：AMAZON.CO.JP
+2026-07-04 13:29:23.887 INFO  c.c.UsageLog.service.UsageService - 金額：3382
+2026-07-04 13:29:23.888 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-30
+2026-07-04 13:29:23.888 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾌｱﾐﾘ-ﾏ-ﾄﾐﾉｵﾆｼｼﾞﾕ
+2026-07-04 13:29:23.888 INFO  c.c.UsageLog.service.UsageService - 金額：171
+2026-07-04 13:29:23.888 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-30
+2026-07-04 13:29:23.888 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾏｸﾄﾞﾅﾙﾄﾞﾓﾊﾞｲﾙｵ-ﾀ
+2026-07-04 13:29:23.888 INFO  c.c.UsageLog.service.UsageService - 金額：480
+2026-07-04 13:29:23.889 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-30
+2026-07-04 13:29:23.889 INFO  c.c.UsageLog.service.UsageService - 購入内容：APPLE COM BILL
+2026-07-04 13:29:23.889 INFO  c.c.UsageLog.service.UsageService - 金額：1280
+2026-07-04 13:29:23.889 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-29
+2026-07-04 13:29:23.890 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｻﾝﾃﾝﾐﾉｵﾆｼｼﾞﾕｸ
+2026-07-04 13:29:23.890 INFO  c.c.UsageLog.service.UsageService - 金額：2240
+2026-07-04 13:29:23.890 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-29
+2026-07-04 13:29:23.890 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾎ-ﾑｾﾝﾀ-ｺ-ﾅﾝ ﾐﾉｵｲ
+2026-07-04 13:29:23.890 INFO  c.c.UsageLog.service.UsageService - 金額：6226
+2026-07-04 13:29:23.890 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-27
+2026-07-04 13:29:23.891 INFO  c.c.UsageLog.service.UsageService - 購入内容：阪急オアシス
+2026-07-04 13:29:23.891 INFO  c.c.UsageLog.service.UsageService - 金額：2220
+2026-07-04 13:29:23.891 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-26
+2026-07-04 13:29:23.891 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｲｷﾅﾘｽﾃ-ｷﾗﾋ
+2026-07-04 13:29:23.891 INFO  c.c.UsageLog.service.UsageService - 金額：4480
+2026-07-04 13:29:23.892 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-26
+2026-07-04 13:29:23.893 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾎ-ﾑｾﾝﾀ-ｺ-ﾅﾝ ﾐﾉｵｲ
+2026-07-04 13:29:23.893 INFO  c.c.UsageLog.service.UsageService - 金額：3690
+2026-07-04 13:29:23.893 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-23
+2026-07-04 13:29:23.895 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｸｶﾞﾈ
+2026-07-04 13:29:23.895 INFO  c.c.UsageLog.service.UsageService - 金額：5560
+2026-07-04 13:29:23.895 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-20
+2026-07-04 13:29:23.895 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｽｷﾞﾔﾂｷﾖｸﾐﾉｵｲﾏﾐﾔﾃ
+2026-07-04 13:29:23.895 INFO  c.c.UsageLog.service.UsageService - 金額：1852
+2026-07-04 13:29:23.896 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 13:29:23.896 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾏﾙｶﾞﾒｾｲﾒﾝ ﾐﾉｵ/NF
+2026-07-04 13:29:23.896 INFO  c.c.UsageLog.service.UsageService - 金額：1020
+2026-07-04 13:29:23.896 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 13:29:23.896 INFO  c.c.UsageLog.service.UsageService - 購入内容：ニトリ
+2026-07-04 13:29:23.896 INFO  c.c.UsageLog.service.UsageService - 金額：8980
+2026-07-04 13:29:23.897 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 13:29:23.897 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾎ-ﾑｾﾝﾀ-ｺ-ﾅﾝ ﾐﾉｵｲ
+2026-07-04 13:29:23.897 INFO  c.c.UsageLog.service.UsageService - 金額：2402
+2026-07-04 13:29:23.898 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 13:29:23.898 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾛ-ｹﾞﾝﾏｲﾔ-ﾐﾉｵﾃﾝ/N
+2026-07-04 13:29:23.898 INFO  c.c.UsageLog.service.UsageService - 金額：1270
+2026-07-04 13:29:23.898 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-16
+2026-07-04 13:29:23.899 INFO  c.c.UsageLog.service.UsageService - 購入内容：楽天証券投信積立０．５％～
+2026-07-04 13:29:23.899 INFO  c.c.UsageLog.service.UsageService - 金額：60000
+2026-07-04 13:29:23.899 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-16
+2026-07-04 13:29:23.899 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾐﾉｵﾕﾓﾄｽｲｼﾕﾝ
+2026-07-04 13:29:23.899 INFO  c.c.UsageLog.service.UsageService - 金額：6410
+2026-07-04 13:29:23.900 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-13
+2026-07-04 13:29:23.900 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾝｷﾕｳｵｱｼｽ
+2026-07-04 13:29:23.900 INFO  c.c.UsageLog.service.UsageService - 金額：1998
+2026-07-04 13:29:23.901 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-11
+2026-07-04 13:29:23.901 INFO  c.c.UsageLog.service.UsageService - 購入内容：楽天モバイル通信料
+2026-07-04 13:29:23.901 INFO  c.c.UsageLog.service.UsageService - 金額：3281
+2026-07-04 13:29:23.901 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-11
+2026-07-04 13:29:23.901 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｼﾞｪｲﾄﾞｸﾞﾘ-ﾝｶﾌｪ
+2026-07-04 13:29:23.901 INFO  c.c.UsageLog.service.UsageService - 金額：720
+2026-07-04 13:29:23.902 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-10
+2026-07-04 13:29:23.902 INFO  c.c.UsageLog.service.UsageService - 購入内容：楽天ＳＰ　ＲＡＭイオンタウン須賀川
+2026-07-04 13:29:23.902 INFO  c.c.UsageLog.service.UsageService - 金額：10000
+2026-07-04 13:29:23.902 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-10
+2026-07-04 13:29:23.902 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾝｷｭｳｳﾒﾀﾞﾎﾝﾃﾝ
+2026-07-04 13:29:23.902 INFO  c.c.UsageLog.service.UsageService - 金額：5031
+2026-07-04 13:29:23.903 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-09
+2026-07-04 13:29:23.903 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｲﾀﾐｸｳｺｳﾀ-ﾐﾅﾙﾋﾞﾙ
+2026-07-04 13:29:23.903 INFO  c.c.UsageLog.service.UsageService - 金額：3710
+2026-07-04 13:29:23.903 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-09
+2026-07-04 13:29:23.903 INFO  c.c.UsageLog.service.UsageService - 購入内容：日本通信株式会社
+2026-07-04 13:29:23.904 INFO  c.c.UsageLog.service.UsageService - 金額：2395
+2026-07-04 13:29:23.904 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-08
+2026-07-04 13:29:23.904 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾐﾉｵｼｼﾐﾝﾌﾞﾏﾄﾞｸﾞﾁｶ
+2026-07-04 13:29:23.904 INFO  c.c.UsageLog.service.UsageService - 金額：900
+2026-07-04 13:29:23.905 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-07
+2026-07-04 13:29:23.905 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾐﾉｵｷﾕ-ｽﾞﾓ-ﾙ
+2026-07-04 13:29:23.905 INFO  c.c.UsageLog.service.UsageService - 金額：1269
+2026-07-04 13:29:23.905 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-07
+2026-07-04 13:29:23.906 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾕｶﾜｶｸﾞ ﾐﾉｵﾃﾝ/NFC
+2026-07-04 13:29:23.906 INFO  c.c.UsageLog.service.UsageService - 金額：190498
+2026-07-04 13:29:23.906 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-06
+2026-07-04 13:29:23.906 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾄｳﾎｳｼﾈﾏｽﾞｴｰﾋﾟｰ
+2026-07-04 13:29:23.906 INFO  c.c.UsageLog.service.UsageService - 金額：200
+2026-07-04 13:29:23.907 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-06
+2026-07-04 13:29:23.907 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾏｸﾄﾞﾅﾙﾄﾞ
+2026-07-04 13:29:23.907 INFO  c.c.UsageLog.service.UsageService - 金額：770
+2026-07-04 13:29:23.907 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-06
+2026-07-04 13:29:23.908 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾓﾊﾞｲﾙｲｺｶﾁﾔ-ｼﾞ
+2026-07-04 13:29:23.908 INFO  c.c.UsageLog.service.UsageService - 金額：5000
+2026-07-04 13:29:23.908 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-06
+2026-07-04 13:29:23.908 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾟﾃｲｽﾘ-ﾓﾝｼｴ-ﾙ ﾌｱ
+2026-07-04 13:29:23.908 INFO  c.c.UsageLog.service.UsageService - 金額：1206
+2026-07-04 13:29:23.908 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-05
+2026-07-04 13:29:23.909 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｻﾝﾃﾞｲ ﾐﾉｵｾﾝﾊﾞﾆｼﾃ
+2026-07-04 13:29:23.909 INFO  c.c.UsageLog.service.UsageService - 金額：2562
+2026-07-04 13:29:23.909 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-04
+2026-07-04 13:29:23.909 INFO  c.c.UsageLog.service.UsageService - 購入内容：APPLE COM BILL
+2026-07-04 13:29:23.909 INFO  c.c.UsageLog.service.UsageService - 金額：1500
+2026-07-04 13:29:23.910 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-03
+2026-07-04 13:29:23.911 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾝｷﾕｳｵｱｼｽ
+2026-07-04 13:29:23.911 INFO  c.c.UsageLog.service.UsageService - 金額：3056
+2026-07-04 13:29:23.911 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-03
+2026-07-04 13:29:23.912 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾗﾍﾟｺｻ-ｶｽ /ｱﾂﾌﾟﾙ
+2026-07-04 13:29:23.912 INFO  c.c.UsageLog.service.UsageService - 金額：1000
+2026-07-04 13:29:23.912 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:29:23.913 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾗﾍﾟｺｻ-ｶｽ /ｱﾂﾌﾟﾙ
+2026-07-04 13:29:23.913 INFO  c.c.UsageLog.service.UsageService - 金額：1000
+2026-07-04 13:29:23.913 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:29:23.913 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾗﾍﾟｺｻ-ｶｽ /ｱﾂﾌﾟﾙ
+2026-07-04 13:29:23.913 INFO  c.c.UsageLog.service.UsageService - 金額：1200
+2026-07-04 13:29:23.913 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:29:23.913 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾗﾍﾟｺｻ-ｶｽ /ｱﾂﾌﾟﾙ
+2026-07-04 13:29:23.913 INFO  c.c.UsageLog.service.UsageService - 金額：1200
+2026-07-04 13:29:23.913 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:29:23.913 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾌﾙﾎﾝｲﾁﾊﾞ ﾂﾙﾐﾃﾝ
+2026-07-04 13:29:23.913 INFO  c.c.UsageLog.service.UsageService - 金額：3466
+2026-07-04 13:29:23.915 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:29:23.915 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾗﾍﾟｺｻ-ｶｽ
+2026-07-04 13:29:23.915 INFO  c.c.UsageLog.service.UsageService - 金額：1500
+2026-07-04 13:29:23.915 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:29:23.915 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｺｶｺ-ﾗｼﾞﾊﾝｷｸｲﾂｸﾍﾟ
+2026-07-04 13:29:23.915 INFO  c.c.UsageLog.service.UsageService - 金額：140
+2026-07-04 13:29:23.915 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:29:23.915 INFO  c.c.UsageLog.service.UsageService - 購入内容：ローソンチケット
+2026-07-04 13:29:23.916 INFO  c.c.UsageLog.service.UsageService - 金額：6490
+2026-07-04 13:29:23.916 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-01
+2026-07-04 13:29:23.916 INFO  c.c.UsageLog.service.UsageService - 購入内容：楽天マガジン
+2026-07-04 13:29:23.916 INFO  c.c.UsageLog.service.UsageService - 金額：422
+2026-07-04 13:29:23.916 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-01
+2026-07-04 13:30:39.673 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:30:39.689 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-04 13:30:39.689 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-04 13:41:02.739 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 22 with PID 21740 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 13:41:02.743 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 13:41:02.786 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-04 13:41:02.786 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-04 13:41:03.400 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 13:41:03.435 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2026-07-04 13:41:03.944 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-04 13:41:03.944 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:41:03.956 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-04 13:41:03.957 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-04 13:41:03.992 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-04 13:41:03.992 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1205 ms
+2026-07-04 13:41:04.116 WARN  o.a.c.c.C.[Tomcat].[localhost].[/] - Cannot deserialize session attribute [uploadData] for session [5209D65A6412C499EC40FBF4B3D88FDE]
+2026-07-04 13:41:04.232 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 13:41:04.268 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-04 13:41:04.289 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-04 13:41:04.440 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 13:41:04.458 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-04 13:41:04.684 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5786d0c
+2026-07-04 13:41:04.684 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-04 13:41:05.303 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 13:41:05.341 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:41:05.516 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-04 13:41:06.087 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 13:41:06.120 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-04 13:41:06.610 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-04 13:41:06.626 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-04 13:41:06.671 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:41:06.693 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-04 13:41:06.708 INFO  c.c.UsageLog.UsageLogApplication - Started UsageLogApplication in 4.368 seconds (process running for 4.687)
+2026-07-04 13:43:32.730 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-04 13:43:32.731 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-04 13:43:32.735 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-07-04 13:43:32.831 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモバイル
+2026-07-04 13:43:32.832 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2221
+2026-07-04 13:43:32.834 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-12
+2026-07-04 13:43:32.834 INFO  c.c.UsageLog.service.UsageService - 購入内容：会員値引　　　（　　　　　　　￥２，２２１分）
+2026-07-04 13:43:32.835 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：-112
+2026-07-04 13:43:32.841 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.time.format.DateTimeParseException: Text '20' could not be parsed at index 0] with root cause
+java.time.format.DateTimeParseException: Text '20' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2108)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:2010)
+	at java.base/java.time.LocalDate.parse(LocalDate.java:435)
+	at com.chotetsu.UsageLog.service.UsageService.parseAeonCsv(UsageService.java:166)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at com.chotetsu.UsageLog.service.UsageService$$SpringCGLIB$$0.parseAeonCsv(<generated>)
+	at com.chotetsu.UsageLog.controller.CsvUploadController.uploadCsv(CsvUploadController.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2026-07-04 13:46:14.960 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモバイル
+2026-07-04 13:46:14.961 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2221
+2026-07-04 13:46:14.962 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-12
+2026-07-04 13:46:14.962 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 13:46:14.962 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1904
+2026-07-04 13:46:14.962 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-13
+2026-07-04 13:46:14.963 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｃｏｋｅ　ＯＮ　Ｐａｙ
+2026-07-04 13:46:14.963 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：150
+2026-07-04 13:46:14.963 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-13
+2026-07-04 13:46:14.964 INFO  c.c.UsageLog.service.UsageService - 購入内容：羽田空港旅客ターミナル
+2026-07-04 13:46:14.964 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：600
+2026-07-04 13:46:14.964 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-14
+2026-07-04 13:46:14.965 INFO  c.c.UsageLog.service.UsageService - 購入内容：２５４１０１　ａｎｄＣＯ
+2026-07-04 13:46:14.965 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：910
+2026-07-04 13:46:14.965 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-14
+2026-07-04 13:46:14.965 INFO  c.c.UsageLog.service.UsageService - 購入内容：セブンイレブン
+2026-07-04 13:46:14.966 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：906
+2026-07-04 13:46:14.966 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-14
+2026-07-04 13:46:14.966 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｋ−ＳＵＰＥＲＭＡＲＫＥ
+2026-07-04 13:46:14.967 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3798
+2026-07-04 13:46:14.967 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 13:46:14.967 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＦＯＯＤ　ＣＡＭＰ　ＦＩ
+2026-07-04 13:46:14.967 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2668
+2026-07-04 13:46:14.967 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 13:46:14.968 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＮＯＲＭＡＬ　ＨＥＬＳＩ
+2026-07-04 13:46:14.968 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：838
+2026-07-04 13:46:14.968 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 13:46:14.968 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｓ−ＭＡＲＫＥＴ　ＲＥＤ
+2026-07-04 13:46:14.968 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：762
+2026-07-04 13:46:14.968 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 13:46:14.969 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＫＡＰＰＥＬＩ　ＨＥＬＳ
+2026-07-04 13:46:14.969 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3223
+2026-07-04 13:46:14.969 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-16
+2026-07-04 13:46:14.970 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｋ−ＣＩＴＹＭＡＲＫＥＴ
+2026-07-04 13:46:14.970 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3095
+2026-07-04 13:46:14.970 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-16
+2026-07-04 13:46:14.970 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＮＯＲＤＩＣ　ＳＴＡＲ
+2026-07-04 13:46:14.970 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1739
+2026-07-04 13:46:14.971 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-16
+2026-07-04 13:46:14.971 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＲＥＬＯＶＥ　ＯＹ
+2026-07-04 13:46:14.971 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1316
+2026-07-04 13:46:14.971 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-17
+2026-07-04 13:46:14.971 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ａ２１１　ＦＩ　ＨＥＬ
+2026-07-04 13:46:14.972 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1983
+2026-07-04 13:46:14.972 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-17
+2026-07-04 13:46:14.972 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＭＡＸ　ＢＵＲＧＥＲＳ
+2026-07-04 13:46:14.972 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：946
+2026-07-04 13:46:14.972 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 13:46:14.973 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＫＡＦＦＥＫＯＰＰＥＮ
+2026-07-04 13:46:14.973 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2267
+2026-07-04 13:46:14.973 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 13:46:14.973 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＫＩＮＧ　ＰＡＬＡＣＥ
+2026-07-04 13:46:14.973 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：875
+2026-07-04 13:46:14.974 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 13:46:14.974 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＬＵＣＫＹＴＯ
+2026-07-04 13:46:14.974 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2784
+2026-07-04 13:46:14.974 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 13:46:14.974 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＬＵＣＫＹＴＯ
+2026-07-04 13:46:14.975 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1392
+2026-07-04 13:46:14.975 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 13:46:14.975 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＳＫＡＴＴＫＡＭＭＡＲＥ
+2026-07-04 13:46:14.975 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3927
+2026-07-04 13:46:14.975 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 13:46:14.976 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＩＣＡ　ＫＶＡＮＴＵＭ
+2026-07-04 13:46:14.976 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2922
+2026-07-04 13:46:14.976 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 13:46:14.976 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＩＫＥＡ　ＫＵＮＧＥＮＳ
+2026-07-04 13:46:14.976 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：250
+2026-07-04 13:46:14.977 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 13:46:14.977 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＩＫＥＡ　ＫＵＮＧＥＮＳ
+2026-07-04 13:46:14.977 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：125
+2026-07-04 13:46:14.977 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 13:46:14.977 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＤＵＦＲＹ　ＤＵＴＹ　Ｆ
+2026-07-04 13:46:14.978 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：7332
+2026-07-04 13:46:14.978 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-19
+2026-07-04 13:46:14.978 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ａ２１２　ＦＩ　ＨＥＬ
+2026-07-04 13:46:14.978 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3800
+2026-07-04 13:46:14.978 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-19
+2026-07-04 13:46:14.978 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＳＬ　ＳＥＮ　ＤＲＡＧＮ
+2026-07-04 13:46:14.979 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1535
+2026-07-04 13:46:14.979 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-20
+2026-07-04 13:46:14.979 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＲＥＦＵＮＤ　ＧＬＯＢＡ
+2026-07-04 13:46:14.979 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：-376
+2026-07-04 13:46:14.980 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-20
+2026-07-04 13:46:14.983 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.StringIndexOutOfBoundsException: Range [0, 4) out of bounds for length 3] with root cause
+java.lang.StringIndexOutOfBoundsException: Range [0, 4) out of bounds for length 3
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4914)
+	at java.base/java.lang.String.substring(String.java:2876)
+	at com.chotetsu.UsageLog.service.UsageService.parseAeonCsv(UsageService.java:174)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at com.chotetsu.UsageLog.service.UsageService$$SpringCGLIB$$0.parseAeonCsv(<generated>)
+	at com.chotetsu.UsageLog.controller.CsvUploadController.uploadCsv(CsvUploadController.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2026-07-04 13:58:51.704 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:58:51.717 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-04 13:58:51.719 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-04 13:59:08.280 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 17.0.8 with PID 5200 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 13:59:08.283 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 13:59:08.342 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-04 13:59:08.343 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-04 13:59:09.486 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 13:59:09.565 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 3 JPA repository interfaces.
+2026-07-04 13:59:10.468 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-04 13:59:10.484 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:59:10.487 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-04 13:59:10.487 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-04 13:59:10.566 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-04 13:59:10.567 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2223 ms
+2026-07-04 13:59:10.969 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 13:59:11.040 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-04 13:59:11.087 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-04 13:59:11.369 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 13:59:11.404 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-04 13:59:11.866 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@616a22e1
+2026-07-04 13:59:11.869 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-04 13:59:12.833 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 13:59:12.886 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:59:13.260 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-04 13:59:14.349 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 13:59:14.416 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-04 13:59:15.526 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-04 13:59:15.540 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-04 13:59:15.636 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:59:15.691 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-04 13:59:15.714 INFO  c.c.UsageLog.UsageLogApplication - Started UsageLogApplication in 7.916 seconds (process running for 9.655)
+2026-07-04 13:59:16.837 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-04 13:59:16.839 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-04 13:59:16.840 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-04 13:59:39.174 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモバイル
+2026-07-04 13:59:39.175 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2221
+2026-07-04 13:59:39.177 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-12
+2026-07-04 13:59:52.711 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 13:59:52.712 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1904
+2026-07-04 13:59:52.712 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-13
+2026-07-04 13:59:54.368 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｃｏｋｅ　ＯＮ　Ｐａｙ
+2026-07-04 13:59:54.368 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：150
+2026-07-04 13:59:54.369 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-13
+2026-07-04 13:59:55.215 INFO  c.c.UsageLog.service.UsageService - 購入内容：羽田空港旅客ターミナル
+2026-07-04 13:59:55.215 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：600
+2026-07-04 13:59:55.215 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-14
+2026-07-04 14:00:27.473 INFO  c.c.UsageLog.service.UsageService - 購入内容：２５４１０１　ａｎｄＣＯ
+2026-07-04 14:00:27.474 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：910
+2026-07-04 14:00:27.475 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-14
+2026-07-04 14:00:31.428 INFO  c.c.UsageLog.service.UsageService - 購入内容：セブンイレブン
+2026-07-04 14:00:31.428 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：906
+2026-07-04 14:00:31.429 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-14
+2026-07-04 14:00:31.964 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｋ−ＳＵＰＥＲＭＡＲＫＥ
+2026-07-04 14:00:31.965 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3798
+2026-07-04 14:00:31.966 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 14:00:32.382 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＦＯＯＤ　ＣＡＭＰ　ＦＩ
+2026-07-04 14:00:32.383 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2668
+2026-07-04 14:00:32.384 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 14:00:32.798 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＮＯＲＭＡＬ　ＨＥＬＳＩ
+2026-07-04 14:00:32.799 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：838
+2026-07-04 14:00:32.800 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 14:00:33.317 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｓ−ＭＡＲＫＥＴ　ＲＥＤ
+2026-07-04 14:00:33.318 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：762
+2026-07-04 14:00:33.318 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 14:00:33.860 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＫＡＰＰＥＬＩ　ＨＥＬＳ
+2026-07-04 14:00:33.861 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3223
+2026-07-04 14:00:33.862 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-16
+2026-07-04 14:00:34.618 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｋ−ＣＩＴＹＭＡＲＫＥＴ
+2026-07-04 14:00:34.619 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3095
+2026-07-04 14:00:34.620 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-16
+2026-07-04 14:00:35.216 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＮＯＲＤＩＣ　ＳＴＡＲ
+2026-07-04 14:00:35.216 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1739
+2026-07-04 14:00:35.216 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-16
+2026-07-04 14:00:35.796 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＲＥＬＯＶＥ　ＯＹ
+2026-07-04 14:00:35.796 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1316
+2026-07-04 14:00:35.797 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-17
+2026-07-04 14:00:36.437 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ａ２１１　ＦＩ　ＨＥＬ
+2026-07-04 14:00:36.437 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1983
+2026-07-04 14:00:36.438 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-17
+2026-07-04 14:00:40.661 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＭＡＸ　ＢＵＲＧＥＲＳ
+2026-07-04 14:00:40.662 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：946
+2026-07-04 14:00:40.663 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:00:41.398 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＫＡＦＦＥＫＯＰＰＥＮ
+2026-07-04 14:00:41.398 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2267
+2026-07-04 14:00:41.398 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:00:41.875 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＫＩＮＧ　ＰＡＬＡＣＥ
+2026-07-04 14:00:41.876 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：875
+2026-07-04 14:00:41.877 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:00:42.459 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＬＵＣＫＹＴＯ
+2026-07-04 14:00:42.460 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2784
+2026-07-04 14:00:42.460 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:00:42.949 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＬＵＣＫＹＴＯ
+2026-07-04 14:00:42.949 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1392
+2026-07-04 14:00:42.950 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:00:43.372 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＳＫＡＴＴＫＡＭＭＡＲＥ
+2026-07-04 14:00:43.372 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3927
+2026-07-04 14:00:43.372 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:00:43.707 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＩＣＡ　ＫＶＡＮＴＵＭ
+2026-07-04 14:00:43.708 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2922
+2026-07-04 14:00:43.709 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:00:44.020 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＩＫＥＡ　ＫＵＮＧＥＮＳ
+2026-07-04 14:00:44.021 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：250
+2026-07-04 14:00:44.022 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:00:44.347 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＩＫＥＡ　ＫＵＮＧＥＮＳ
+2026-07-04 14:00:44.347 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：125
+2026-07-04 14:00:44.347 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:00:44.712 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＤＵＦＲＹ　ＤＵＴＹ　Ｆ
+2026-07-04 14:00:44.712 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：7332
+2026-07-04 14:00:44.713 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-19
+2026-07-04 14:00:45.277 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ａ２１２　ＦＩ　ＨＥＬ
+2026-07-04 14:00:45.277 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3800
+2026-07-04 14:00:45.278 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-19
+2026-07-04 14:00:45.976 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＳＬ　ＳＥＮ　ＤＲＡＧＮ
+2026-07-04 14:00:45.977 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1535
+2026-07-04 14:00:45.977 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-20
+2026-07-04 14:00:46.663 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＲＥＦＵＮＤ　ＧＬＯＢＡ
+2026-07-04 14:00:46.663 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：-376
+2026-07-04 14:00:46.664 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-20
+2026-07-04 14:02:25.125 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.StringIndexOutOfBoundsException: begin 0, end 4, length 3] with root cause
+java.lang.StringIndexOutOfBoundsException: begin 0, end 4, length 3
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+	at java.base/java.lang.String.substring(String.java:2707)
+	at com.chotetsu.UsageLog.service.UsageService.parseAeonCsv(UsageService.java:174)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at com.chotetsu.UsageLog.service.UsageService$$SpringCGLIB$$0.parseAeonCsv(<generated>)
+	at com.chotetsu.UsageLog.controller.CsvUploadController.uploadCsv(CsvUploadController.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2026-07-04 14:08:40.837 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-04 14:08:40.844 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-04 14:08:40.860 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 14:08:40.864 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-04 14:08:40.882 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-04 14:08:40.972 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 17.0.8 with PID 5200 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 14:08:40.972 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 14:08:41.321 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 14:08:41.338 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2026-07-04 14:08:41.482 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-04 14:08:41.482 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-04 14:08:41.483 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-04 14:08:41.483 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-04 14:08:41.500 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-04 14:08:41.500 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 525 ms
+2026-07-04 14:08:41.617 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 14:08:41.620 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-04 14:08:41.625 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 14:08:41.626 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-07-04 14:08:41.642 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@775425dc
+2026-07-04 14:08:41.643 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-07-04 14:08:41.698 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 14:08:41.708 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 14:08:41.895 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 14:08:41.922 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-04 14:08:42.249 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-04 14:08:42.255 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-04 14:08:42.270 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-04 14:08:42.281 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-04 14:08:42.286 INFO  c.c.UsageLog.UsageLogApplication - Started UsageLogApplication in 1.349 seconds (process running for 576.227)
+2026-07-04 14:08:42.288 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-04 14:08:46.249 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 14:08:46.250 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-07-04 14:08:46.258 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-07-04 14:10:06.873 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 22 with PID 24188 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 14:10:06.876 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 14:10:06.919 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-04 14:10:06.920 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-04 14:10:07.520 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 14:10:07.563 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2026-07-04 14:10:08.060 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-04 14:10:08.067 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-04 14:10:08.069 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-04 14:10:08.069 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-04 14:10:08.108 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-04 14:10:08.109 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1188 ms
+2026-07-04 14:10:08.330 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 14:10:08.364 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-04 14:10:08.386 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-04 14:10:08.527 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 14:10:08.543 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-04 14:10:08.784 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37095a8b
+2026-07-04 14:10:08.786 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-04 14:10:09.514 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 14:10:09.558 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 14:10:09.764 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-04 14:10:10.360 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 14:10:10.391 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-04 14:10:10.816 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-04 14:10:10.825 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-04 14:10:10.869 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-04 14:10:10.892 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-04 14:10:10.900 INFO  c.c.UsageLog.UsageLogApplication - Started UsageLogApplication in 4.387 seconds (process running for 4.702)
+2026-07-04 14:13:59.803 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-04 14:13:59.804 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-04 14:13:59.806 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-07-04 14:14:09.144 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモバイル
+2026-07-04 14:14:09.145 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2221
+2026-07-04 14:14:09.148 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-12
+2026-07-04 14:14:09.148 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:14:09.149 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1904
+2026-07-04 14:14:09.149 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-13
+2026-07-04 14:14:09.149 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｃｏｋｅ　ＯＮ　Ｐａｙ
+2026-07-04 14:14:09.149 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：150
+2026-07-04 14:14:09.150 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-13
+2026-07-04 14:14:09.150 INFO  c.c.UsageLog.service.UsageService - 購入内容：羽田空港旅客ターミナル
+2026-07-04 14:14:09.150 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：600
+2026-07-04 14:14:09.150 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-14
+2026-07-04 14:14:09.150 INFO  c.c.UsageLog.service.UsageService - 購入内容：２５４１０１　ａｎｄＣＯ
+2026-07-04 14:14:09.150 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：910
+2026-07-04 14:14:09.151 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-14
+2026-07-04 14:14:09.151 INFO  c.c.UsageLog.service.UsageService - 購入内容：セブンイレブン
+2026-07-04 14:14:09.151 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：906
+2026-07-04 14:14:09.151 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-14
+2026-07-04 14:14:09.151 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｋ−ＳＵＰＥＲＭＡＲＫＥ
+2026-07-04 14:14:09.151 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3798
+2026-07-04 14:14:09.151 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 14:14:09.152 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＦＯＯＤ　ＣＡＭＰ　ＦＩ
+2026-07-04 14:14:09.152 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2668
+2026-07-04 14:14:09.152 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 14:14:09.152 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＮＯＲＭＡＬ　ＨＥＬＳＩ
+2026-07-04 14:14:09.152 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：838
+2026-07-04 14:14:09.153 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 14:14:09.153 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｓ−ＭＡＲＫＥＴ　ＲＥＤ
+2026-07-04 14:14:09.153 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：762
+2026-07-04 14:14:09.153 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-15
+2026-07-04 14:14:09.154 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＫＡＰＰＥＬＩ　ＨＥＬＳ
+2026-07-04 14:14:09.154 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3223
+2026-07-04 14:14:09.154 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-16
+2026-07-04 14:14:09.154 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｋ−ＣＩＴＹＭＡＲＫＥＴ
+2026-07-04 14:14:09.155 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3095
+2026-07-04 14:14:09.155 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-16
+2026-07-04 14:14:09.155 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＮＯＲＤＩＣ　ＳＴＡＲ
+2026-07-04 14:14:09.155 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1739
+2026-07-04 14:14:09.156 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-16
+2026-07-04 14:14:09.156 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＲＥＬＯＶＥ　ＯＹ
+2026-07-04 14:14:09.156 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1316
+2026-07-04 14:14:09.156 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-17
+2026-07-04 14:14:09.156 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ａ２１１　ＦＩ　ＨＥＬ
+2026-07-04 14:14:09.156 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1983
+2026-07-04 14:14:09.156 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-17
+2026-07-04 14:14:09.157 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＭＡＸ　ＢＵＲＧＥＲＳ
+2026-07-04 14:14:09.157 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：946
+2026-07-04 14:14:09.157 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:14:09.157 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＫＡＦＦＥＫＯＰＰＥＮ
+2026-07-04 14:14:09.157 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2267
+2026-07-04 14:14:09.157 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:14:09.158 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＫＩＮＧ　ＰＡＬＡＣＥ
+2026-07-04 14:14:09.158 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：875
+2026-07-04 14:14:09.158 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:14:09.158 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＬＵＣＫＹＴＯ
+2026-07-04 14:14:09.158 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2784
+2026-07-04 14:14:09.158 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:14:09.159 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＬＵＣＫＹＴＯ
+2026-07-04 14:14:09.159 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1392
+2026-07-04 14:14:09.159 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:14:09.159 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＳＫＡＴＴＫＡＭＭＡＲＥ
+2026-07-04 14:14:09.159 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3927
+2026-07-04 14:14:09.160 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:14:09.160 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＩＣＡ　ＫＶＡＮＴＵＭ
+2026-07-04 14:14:09.160 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2922
+2026-07-04 14:14:09.160 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:14:09.160 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＩＫＥＡ　ＫＵＮＧＥＮＳ
+2026-07-04 14:14:09.160 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：250
+2026-07-04 14:14:09.161 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:14:09.161 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＩＫＥＡ　ＫＵＮＧＥＮＳ
+2026-07-04 14:14:09.161 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：125
+2026-07-04 14:14:09.161 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-18
+2026-07-04 14:14:09.161 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＤＵＦＲＹ　ＤＵＴＹ　Ｆ
+2026-07-04 14:14:09.162 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：7332
+2026-07-04 14:14:09.162 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-19
+2026-07-04 14:14:09.162 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ａ２１２　ＦＩ　ＨＥＬ
+2026-07-04 14:14:09.162 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3800
+2026-07-04 14:14:09.163 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-19
+2026-07-04 14:14:09.163 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＳＬ　ＳＥＮ　ＤＲＡＧＮ
+2026-07-04 14:14:09.163 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1535
+2026-07-04 14:14:09.163 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-20
+2026-07-04 14:14:09.163 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＲＥＦＵＮＤ　ＧＬＯＢＡ
+2026-07-04 14:14:09.165 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：-376
+2026-07-04 14:14:09.165 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-20
+2026-07-04 14:14:09.165 INFO  c.c.UsageLog.service.UsageService - 購入内容：ミニストップイオンモール
+2026-07-04 14:14:09.165 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：294
+2026-07-04 14:14:09.165 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-21
+2026-07-04 14:14:09.165 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモール堺鉄砲町
+2026-07-04 14:14:09.165 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：270
+2026-07-04 14:14:09.165 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-21
+2026-07-04 14:14:09.166 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモール堺鉄砲町
+2026-07-04 14:14:09.166 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：660
+2026-07-04 14:14:09.166 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-21
+2026-07-04 14:14:09.166 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモール堺鉄砲町
+2026-07-04 14:14:09.166 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1485
+2026-07-04 14:14:09.166 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-21
+2026-07-04 14:14:09.166 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:14:09.167 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：374
+2026-07-04 14:14:09.167 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-22
+2026-07-04 14:14:09.167 INFO  c.c.UsageLog.service.UsageService - 購入内容：スギ薬局　箕面船場店
+2026-07-04 14:14:09.167 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：291
+2026-07-04 14:14:09.167 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-22
+2026-07-04 14:14:09.167 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｃｏｋｅ　ＯＮ　Ｐａｙ
+2026-07-04 14:14:09.168 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：120
+2026-07-04 14:14:09.168 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-22
+2026-07-04 14:14:09.168 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:14:09.168 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：417
+2026-07-04 14:14:09.169 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-23
+2026-07-04 14:14:09.169 INFO  c.c.UsageLog.service.UsageService - 購入内容：スギ薬局　箕面船場店
+2026-07-04 14:14:09.169 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：333
+2026-07-04 14:14:09.169 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-23
+2026-07-04 14:14:09.169 INFO  c.c.UsageLog.service.UsageService - 購入内容：ハンシンデンシヤ　テイキ
+2026-07-04 14:14:09.169 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：5710
+2026-07-04 14:14:09.169 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-23
+2026-07-04 14:14:09.170 INFO  c.c.UsageLog.service.UsageService - 購入内容：オオサカシコウソクデンキ
+2026-07-04 14:14:09.170 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：17720
+2026-07-04 14:14:09.170 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-24
+2026-07-04 14:14:09.170 INFO  c.c.UsageLog.service.UsageService - 購入内容：ヤヨイケン　ノダハンシン
+2026-07-04 14:14:09.170 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：990
+2026-07-04 14:14:09.170 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-24
+2026-07-04 14:14:09.171 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン堺鉄砲町
+2026-07-04 14:14:09.171 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2459
+2026-07-04 14:14:09.171 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-25
+2026-07-04 14:14:09.171 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン堺鉄砲町
+2026-07-04 14:14:09.171 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1203
+2026-07-04 14:14:09.172 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-25
+2026-07-04 14:14:09.172 INFO  c.c.UsageLog.service.UsageService - 購入内容：��島屋
+2026-07-04 14:14:09.172 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：501
+2026-07-04 14:14:09.172 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-25
+2026-07-04 14:14:09.172 INFO  c.c.UsageLog.service.UsageService - 購入内容：ミニストップイオンモール
+2026-07-04 14:14:09.172 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：152
+2026-07-04 14:14:09.173 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-25
+2026-07-04 14:14:09.173 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモール堺鉄砲町
+2026-07-04 14:14:09.173 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1272
+2026-07-04 14:14:09.173 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-25
+2026-07-04 14:14:09.173 INFO  c.c.UsageLog.service.UsageService - 購入内容：丸亀製麺　　野田阪神
+2026-07-04 14:14:09.173 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：690
+2026-07-04 14:14:09.173 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-28
+2026-07-04 14:14:09.173 INFO  c.c.UsageLog.service.UsageService - 購入内容：ハンキユウオアシス／ＩＤＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:14:09.173 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：586
+2026-07-04 14:14:09.174 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-28
+2026-07-04 14:14:09.174 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:14:09.174 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：257
+2026-07-04 14:14:09.174 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-04-29
+2026-07-04 14:14:09.174 INFO  c.c.UsageLog.service.UsageService - 購入内容：はらぺこＣＩＲＣＵＳ
+2026-07-04 14:14:09.174 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1100
+2026-07-04 14:14:09.174 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-01
+2026-07-04 14:14:09.175 INFO  c.c.UsageLog.service.UsageService - 購入内容：はらぺこＣＩＲＣＵＳ
+2026-07-04 14:14:09.175 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1500
+2026-07-04 14:14:09.175 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-03
+2026-07-04 14:14:09.175 INFO  c.c.UsageLog.service.UsageService - 購入内容：ハラペコサ−カス
+2026-07-04 14:14:09.175 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：600
+2026-07-04 14:14:09.175 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-03
+2026-07-04 14:14:09.176 INFO  c.c.UsageLog.service.UsageService - 購入内容：ハラペコサ−カス
+2026-07-04 14:14:09.176 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1200
+2026-07-04 14:14:09.176 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-03
+2026-07-04 14:14:09.176 INFO  c.c.UsageLog.service.UsageService - 購入内容：ホームセンターコーナン箕
+2026-07-04 14:14:09.176 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：8202
+2026-07-04 14:14:09.177 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-05
+2026-07-04 14:14:09.177 INFO  c.c.UsageLog.service.UsageService - 購入内容：阪急オアシス
+2026-07-04 14:14:09.177 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：883
+2026-07-04 14:14:09.177 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-05
+2026-07-04 14:14:09.177 INFO  c.c.UsageLog.service.UsageService - 購入内容：スタンダ−ドド−ナツオオＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:14:09.177 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1188
+2026-07-04 14:14:09.177 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-06
+2026-07-04 14:14:09.178 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:14:09.178 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1337
+2026-07-04 14:14:09.178 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-07
+2026-07-04 14:14:09.178 INFO  c.c.UsageLog.service.UsageService - 購入内容：エ−エヌエ−インタ−ネツ
+2026-07-04 14:14:09.178 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：134960
+2026-07-04 14:14:09.179 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-07
+2026-07-04 14:14:09.179 INFO  c.c.UsageLog.service.UsageService - 購入内容：ハンキユウオアシス／ＩＤＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:14:09.180 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：440
+2026-07-04 14:14:09.180 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-07
+2026-07-04 14:14:09.180 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｃｏｋｅ　ＯＮ　Ｐａｙ
+2026-07-04 14:14:09.180 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：190
+2026-07-04 14:14:09.180 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-09
+2026-07-04 14:14:31.609 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモバイル
+2026-07-04 14:14:31.609 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1967
+2026-07-04 14:14:31.611 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-12
+2026-07-04 14:14:31.611 INFO  c.c.UsageLog.service.UsageService - 購入内容：会員値引　　　（　　　　　　　￥１，９６７分）
+2026-07-04 14:14:31.611 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：-99
+2026-07-04 14:14:31.616 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.time.format.DateTimeParseException: Text '20' could not be parsed at index 0] with root cause
+java.time.format.DateTimeParseException: Text '20' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2108)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:2010)
+	at java.base/java.time.LocalDate.parse(LocalDate.java:435)
+	at com.chotetsu.UsageLog.service.UsageService.parseAeonCsv(UsageService.java:167)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at com.chotetsu.UsageLog.service.UsageService$$SpringCGLIB$$0.parseAeonCsv(<generated>)
+	at com.chotetsu.UsageLog.controller.CsvUploadController.uploadCsv(CsvUploadController.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2026-07-04 14:17:57.152 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモバイル
+2026-07-04 14:17:57.153 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1967
+2026-07-04 14:17:57.153 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-12
+2026-07-04 14:17:57.153 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.153 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1283
+2026-07-04 14:17:57.153 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-12
+2026-07-04 14:17:57.154 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.154 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：379
+2026-07-04 14:17:57.154 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-12
+2026-07-04 14:17:57.154 INFO  c.c.UsageLog.service.UsageService - 購入内容：スギ薬局　箕面船場店
+2026-07-04 14:17:57.154 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：30
+2026-07-04 14:17:57.154 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-12
+2026-07-04 14:17:57.154 INFO  c.c.UsageLog.service.UsageService - 購入内容：ヤヨイケン　ノダハンシンＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:17:57.154 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：990
+2026-07-04 14:17:57.155 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-13
+2026-07-04 14:17:57.155 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｃｏｋｅ　ＯＮ　Ｐａｙ
+2026-07-04 14:17:57.155 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：190
+2026-07-04 14:17:57.155 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-14
+2026-07-04 14:17:57.155 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.155 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：596
+2026-07-04 14:17:57.156 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-15
+2026-07-04 14:17:57.156 INFO  c.c.UsageLog.service.UsageService - 購入内容：オオサカシコウソクデンキ
+2026-07-04 14:17:57.156 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：18470
+2026-07-04 14:17:57.156 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-15
+2026-07-04 14:17:57.156 INFO  c.c.UsageLog.service.UsageService - 購入内容：オオサカシコウソクデンキ
+2026-07-04 14:17:57.156 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：-5680
+2026-07-04 14:17:57.156 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-15
+2026-07-04 14:17:57.156 INFO  c.c.UsageLog.service.UsageService - 購入内容：株）ニトリ
+2026-07-04 14:17:57.156 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：20000
+2026-07-04 14:17:57.156 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 14:17:57.157 INFO  c.c.UsageLog.service.UsageService - 購入内容：丸亀製麺　　箕面
+2026-07-04 14:17:57.157 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1060
+2026-07-04 14:17:57.157 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 14:17:57.157 INFO  c.c.UsageLog.service.UsageService - 購入内容：マクドナルドモバイルオ−
+2026-07-04 14:17:57.157 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：960
+2026-07-04 14:17:57.157 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 14:17:57.157 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン箕面
+2026-07-04 14:17:57.157 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3494
+2026-07-04 14:17:57.157 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-18
+2026-07-04 14:17:57.158 INFO  c.c.UsageLog.service.UsageService - 購入内容：スキヤ
+2026-07-04 14:17:57.158 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：500
+2026-07-04 14:17:57.158 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-18
+2026-07-04 14:17:57.158 INFO  c.c.UsageLog.service.UsageService - 購入内容：ミノオキユ−ズモ−ル／ＩＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:17:57.158 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1785
+2026-07-04 14:17:57.158 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-18
+2026-07-04 14:17:57.158 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.158 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：203
+2026-07-04 14:17:57.159 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-19
+2026-07-04 14:17:57.159 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＵＢＥＲ　＊ＥＡＴＳ　Ｈ
+2026-07-04 14:17:57.159 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2451
+2026-07-04 14:17:57.159 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-19
+2026-07-04 14:17:57.159 INFO  c.c.UsageLog.service.UsageService - 購入内容：マクドナルドイオンモールＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:17:57.160 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：760
+2026-07-04 14:17:57.160 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-21
+2026-07-04 14:17:57.160 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.160 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：87
+2026-07-04 14:17:57.160 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-22
+2026-07-04 14:17:57.160 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.160 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：447
+2026-07-04 14:17:57.160 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-22
+2026-07-04 14:17:57.160 INFO  c.c.UsageLog.service.UsageService - 購入内容：ハンシンデンシヤ　テイキ
+2026-07-04 14:17:57.161 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：5710
+2026-07-04 14:17:57.161 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-22
+2026-07-04 14:17:57.161 INFO  c.c.UsageLog.service.UsageService - 購入内容：サイカスマ−トナビニシニ
+2026-07-04 14:17:57.161 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2500
+2026-07-04 14:17:57.161 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-22
+2026-07-04 14:17:57.161 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン大阪ドーム
+2026-07-04 14:17:57.161 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：328487
+2026-07-04 14:17:57.161 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-23
+2026-07-04 14:17:57.162 INFO  c.c.UsageLog.service.UsageService - 購入内容：マツクデリバリ−
+2026-07-04 14:17:57.162 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2980
+2026-07-04 14:17:57.162 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-24
+2026-07-04 14:17:57.162 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.162 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：142
+2026-07-04 14:17:57.162 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-25
+2026-07-04 14:17:57.162 INFO  c.c.UsageLog.service.UsageService - 購入内容：マクドナルド
+2026-07-04 14:17:57.162 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1960
+2026-07-04 14:17:57.163 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-25
+2026-07-04 14:17:57.163 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモール伊丹
+2026-07-04 14:17:57.163 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：690
+2026-07-04 14:17:57.163 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-30
+2026-07-04 14:17:57.163 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.163 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：534
+2026-07-04 14:17:57.163 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 14:17:57.163 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.163 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1015
+2026-07-04 14:17:57.163 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 14:17:57.164 INFO  c.c.UsageLog.service.UsageService - 購入内容：ドンキホーテドウトンボリ
+2026-07-04 14:17:57.164 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：538
+2026-07-04 14:17:57.164 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 14:17:57.164 INFO  c.c.UsageLog.service.UsageService - 購入内容：ドンキホーテドウトンボリＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:17:57.164 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3867
+2026-07-04 14:17:57.165 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 14:17:57.165 INFO  c.c.UsageLog.service.UsageService - 購入内容：セリア　アベノルシアステＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:17:57.165 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2095
+2026-07-04 14:17:57.165 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-01
+2026-07-04 14:17:57.165 INFO  c.c.UsageLog.service.UsageService - 購入内容：マクドナルドモバイルオ−
+2026-07-04 14:17:57.165 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1960
+2026-07-04 14:17:57.165 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-01
+2026-07-04 14:17:57.166 INFO  c.c.UsageLog.service.UsageService - 購入内容：オオサカコウリツダイガク
+2026-07-04 14:17:57.166 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2030
+2026-07-04 14:17:57.166 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-01
+2026-07-04 14:17:57.166 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.166 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：501
+2026-07-04 14:17:57.166 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-02
+2026-07-04 14:17:57.166 INFO  c.c.UsageLog.service.UsageService - 購入内容：ウイステ
+2026-07-04 14:17:57.166 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1210
+2026-07-04 14:17:57.167 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-03
+2026-07-04 14:17:57.167 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.167 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：507
+2026-07-04 14:17:57.167 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-04
+2026-07-04 14:17:57.167 INFO  c.c.UsageLog.service.UsageService - 購入内容：サブウエイ　イオンモ−ルＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:17:57.167 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：650
+2026-07-04 14:17:57.168 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-05
+2026-07-04 14:17:57.168 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＣＨＩＮＡ　ＡＩＲ
+2026-07-04 14:17:57.168 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：80006
+2026-07-04 14:17:57.168 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-06
+2026-07-04 14:17:57.168 INFO  c.c.UsageLog.service.UsageService - 購入内容：マツクデリバリ−
+2026-07-04 14:17:57.168 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2940
+2026-07-04 14:17:57.168 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-06
+2026-07-04 14:17:57.168 INFO  c.c.UsageLog.service.UsageService - 購入内容：シージェイオリーブヤング
+2026-07-04 14:17:57.168 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：12542
+2026-07-04 14:17:57.169 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-07
+2026-07-04 14:17:57.169 INFO  c.c.UsageLog.service.UsageService - 購入内容：シージェイオリーブヤング
+2026-07-04 14:17:57.169 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：6844
+2026-07-04 14:17:57.169 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-07
+2026-07-04 14:17:57.169 INFO  c.c.UsageLog.service.UsageService - 購入内容：サントリ−ウエルネス
+2026-07-04 14:17:57.169 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：5054
+2026-07-04 14:17:57.169 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-08
+2026-07-04 14:17:57.169 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.169 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：567
+2026-07-04 14:17:57.169 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-09
+2026-07-04 14:17:57.170 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:17:57.170 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：640
+2026-07-04 14:17:57.170 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-09
+2026-07-04 14:17:57.170 INFO  c.c.UsageLog.service.UsageService - 購入内容：ウイステ
+2026-07-04 14:17:57.170 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：599
+2026-07-04 14:17:57.170 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-09
+2026-07-04 14:17:57.170 INFO  c.c.UsageLog.service.UsageService - 購入内容：ホームセンターコーナン箕
+2026-07-04 14:17:57.170 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：5423
+2026-07-04 14:17:57.171 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-10
+2026-07-04 14:17:57.171 INFO  c.c.UsageLog.service.UsageService - 購入内容：
+2026-07-04 14:17:57.171 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2245
+2026-07-04 14:17:57.171 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-10
+2026-07-04 14:19:18.145 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモバイル
+2026-07-04 14:19:18.146 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1967
+2026-07-04 14:19:18.146 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-12
+2026-07-04 14:19:18.146 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.146 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1283
+2026-07-04 14:19:18.146 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-12
+2026-07-04 14:19:18.146 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.146 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：379
+2026-07-04 14:19:18.147 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-12
+2026-07-04 14:19:18.147 INFO  c.c.UsageLog.service.UsageService - 購入内容：スギ薬局　箕面船場店
+2026-07-04 14:19:18.147 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：30
+2026-07-04 14:19:18.147 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-12
+2026-07-04 14:19:18.147 INFO  c.c.UsageLog.service.UsageService - 購入内容：ヤヨイケン　ノダハンシンＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:19:18.147 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：990
+2026-07-04 14:19:18.147 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-13
+2026-07-04 14:19:18.147 INFO  c.c.UsageLog.service.UsageService - 購入内容：Ｃｏｋｅ　ＯＮ　Ｐａｙ
+2026-07-04 14:19:18.147 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：190
+2026-07-04 14:19:18.148 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-14
+2026-07-04 14:19:18.148 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.148 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：596
+2026-07-04 14:19:18.148 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-15
+2026-07-04 14:19:18.148 INFO  c.c.UsageLog.service.UsageService - 購入内容：オオサカシコウソクデンキ
+2026-07-04 14:19:18.148 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：18470
+2026-07-04 14:19:18.148 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-15
+2026-07-04 14:19:18.148 INFO  c.c.UsageLog.service.UsageService - 購入内容：オオサカシコウソクデンキ
+2026-07-04 14:19:18.148 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：-5680
+2026-07-04 14:19:18.149 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-15
+2026-07-04 14:19:18.149 INFO  c.c.UsageLog.service.UsageService - 購入内容：株）ニトリ
+2026-07-04 14:19:18.149 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：20000
+2026-07-04 14:19:18.149 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 14:19:18.149 INFO  c.c.UsageLog.service.UsageService - 購入内容：丸亀製麺　　箕面
+2026-07-04 14:19:18.149 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1060
+2026-07-04 14:19:18.149 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 14:19:18.149 INFO  c.c.UsageLog.service.UsageService - 購入内容：マクドナルドモバイルオ−
+2026-07-04 14:19:18.149 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：960
+2026-07-04 14:19:18.150 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 14:19:18.150 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン箕面
+2026-07-04 14:19:18.150 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3494
+2026-07-04 14:19:18.150 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-18
+2026-07-04 14:19:18.150 INFO  c.c.UsageLog.service.UsageService - 購入内容：スキヤ
+2026-07-04 14:19:18.151 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：500
+2026-07-04 14:19:18.151 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-18
+2026-07-04 14:19:18.151 INFO  c.c.UsageLog.service.UsageService - 購入内容：ミノオキユ−ズモ−ル／ＩＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:19:18.151 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1785
+2026-07-04 14:19:18.151 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-18
+2026-07-04 14:19:18.151 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.152 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：203
+2026-07-04 14:19:18.152 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-19
+2026-07-04 14:19:18.152 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＵＢＥＲ　＊ＥＡＴＳ　Ｈ
+2026-07-04 14:19:18.152 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2451
+2026-07-04 14:19:18.152 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-19
+2026-07-04 14:19:18.152 INFO  c.c.UsageLog.service.UsageService - 購入内容：マクドナルドイオンモールＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:19:18.152 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：760
+2026-07-04 14:19:18.152 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-21
+2026-07-04 14:19:18.152 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.152 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：87
+2026-07-04 14:19:18.153 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-22
+2026-07-04 14:19:18.153 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.153 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：447
+2026-07-04 14:19:18.153 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-22
+2026-07-04 14:19:18.153 INFO  c.c.UsageLog.service.UsageService - 購入内容：ハンシンデンシヤ　テイキ
+2026-07-04 14:19:18.153 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：5710
+2026-07-04 14:19:18.154 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-22
+2026-07-04 14:19:18.154 INFO  c.c.UsageLog.service.UsageService - 購入内容：サイカスマ−トナビニシニ
+2026-07-04 14:19:18.154 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2500
+2026-07-04 14:19:18.154 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-22
+2026-07-04 14:19:18.154 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン大阪ドーム
+2026-07-04 14:19:18.154 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：328487
+2026-07-04 14:19:18.154 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-23
+2026-07-04 14:19:18.154 INFO  c.c.UsageLog.service.UsageService - 購入内容：マツクデリバリ−
+2026-07-04 14:19:18.154 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2980
+2026-07-04 14:19:18.155 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-24
+2026-07-04 14:19:18.155 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.155 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：142
+2026-07-04 14:19:18.155 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-25
+2026-07-04 14:19:18.155 INFO  c.c.UsageLog.service.UsageService - 購入内容：マクドナルド
+2026-07-04 14:19:18.155 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1960
+2026-07-04 14:19:18.155 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-25
+2026-07-04 14:19:18.155 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオンモール伊丹
+2026-07-04 14:19:18.156 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：690
+2026-07-04 14:19:18.156 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-30
+2026-07-04 14:19:18.156 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.156 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：534
+2026-07-04 14:19:18.156 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 14:19:18.156 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.156 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1015
+2026-07-04 14:19:18.156 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 14:19:18.157 INFO  c.c.UsageLog.service.UsageService - 購入内容：ドンキホーテドウトンボリ
+2026-07-04 14:19:18.157 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：538
+2026-07-04 14:19:18.157 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 14:19:18.157 INFO  c.c.UsageLog.service.UsageService - 購入内容：ドンキホーテドウトンボリＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:19:18.157 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：3867
+2026-07-04 14:19:18.157 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 14:19:18.157 INFO  c.c.UsageLog.service.UsageService - 購入内容：セリア　アベノルシアステＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:19:18.157 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2095
+2026-07-04 14:19:18.157 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-01
+2026-07-04 14:19:18.157 INFO  c.c.UsageLog.service.UsageService - 購入内容：マクドナルドモバイルオ−
+2026-07-04 14:19:18.158 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1960
+2026-07-04 14:19:18.158 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-01
+2026-07-04 14:19:18.158 INFO  c.c.UsageLog.service.UsageService - 購入内容：オオサカコウリツダイガク
+2026-07-04 14:19:18.158 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2030
+2026-07-04 14:19:18.158 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-01
+2026-07-04 14:19:18.158 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.158 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：501
+2026-07-04 14:19:18.158 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-02
+2026-07-04 14:19:18.158 INFO  c.c.UsageLog.service.UsageService - 購入内容：ウイステ
+2026-07-04 14:19:18.159 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：1210
+2026-07-04 14:19:18.159 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-03
+2026-07-04 14:19:18.159 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.159 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：507
+2026-07-04 14:19:18.159 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-04
+2026-07-04 14:19:18.159 INFO  c.c.UsageLog.service.UsageService - 購入内容：サブウエイ　イオンモ−ルＡｐｐｌｅ　Ｐａｙ利用分
+2026-07-04 14:19:18.159 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：650
+2026-07-04 14:19:18.159 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-05
+2026-07-04 14:19:18.159 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＣＨＩＮＡ　ＡＩＲ
+2026-07-04 14:19:18.159 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：80006
+2026-07-04 14:19:18.160 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-06
+2026-07-04 14:19:18.160 INFO  c.c.UsageLog.service.UsageService - 購入内容：マツクデリバリ−
+2026-07-04 14:19:18.160 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：2940
+2026-07-04 14:19:18.160 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-06
+2026-07-04 14:19:18.160 INFO  c.c.UsageLog.service.UsageService - 購入内容：シージェイオリーブヤング
+2026-07-04 14:19:18.160 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：12542
+2026-07-04 14:19:18.160 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-07
+2026-07-04 14:19:18.160 INFO  c.c.UsageLog.service.UsageService - 購入内容：シージェイオリーブヤング
+2026-07-04 14:19:18.160 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：6844
+2026-07-04 14:19:18.161 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-07
+2026-07-04 14:19:18.161 INFO  c.c.UsageLog.service.UsageService - 購入内容：サントリ−ウエルネス
+2026-07-04 14:19:18.161 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：5054
+2026-07-04 14:19:18.161 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-08
+2026-07-04 14:19:18.161 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.161 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：567
+2026-07-04 14:19:18.161 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-09
+2026-07-04 14:19:18.161 INFO  c.c.UsageLog.service.UsageService - 購入内容：イオン野田阪神
+2026-07-04 14:19:18.161 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：640
+2026-07-04 14:19:18.161 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-09
+2026-07-04 14:19:18.161 INFO  c.c.UsageLog.service.UsageService - 購入内容：ウイステ
+2026-07-04 14:19:18.162 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：599
+2026-07-04 14:19:18.162 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-09
+2026-07-04 14:19:18.162 INFO  c.c.UsageLog.service.UsageService - 購入内容：ホームセンターコーナン箕
+2026-07-04 14:19:18.162 INFO  c.c.UsageLog.service.UsageService - 金額（値引き後）：5423
+2026-07-04 14:19:18.162 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-06-10
+2026-07-04 14:31:46.082 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 14:31:46.089 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-04 14:31:46.089 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,310 @@
+2026-07-04 13:19:15.980 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 22 with PID 13792 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 13:19:15.980 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 13:19:16.195 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 13:19:16.213 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2026-07-04 13:19:16.311 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-04 13:19:16.311 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:19:16.311 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-04 13:19:16.311 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-04 13:19:16.332 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-04 13:19:16.333 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 353 ms
+2026-07-04 13:19:16.395 WARN  o.a.c.c.C.[Tomcat].[localhost].[/] - Cannot deserialize session attribute [uploadData] for session [5209D65A6412C499EC40FBF4B3D88FDE]
+2026-07-04 13:19:16.430 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 13:19:16.430 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-04 13:19:16.444 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 13:19:16.447 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-07-04 13:19:16.452 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67146cfb
+2026-07-04 13:19:16.452 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-07-04 13:19:16.495 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 13:19:16.495 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:19:16.702 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 13:19:16.785 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-04 13:19:17.131 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-04 13:19:17.131 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-04 13:19:17.145 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:19:17.162 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-04 13:19:17.171 INFO  c.c.UsageLog.UsageLogApplication - Started UsageLogApplication in 1.221 seconds (process running for 104.612)
+2026-07-04 13:19:17.173 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-04 13:19:18.563 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-04 13:19:18.568 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:19:18.571 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:19:18.576 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-07-04 13:19:18.580 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-07-04 13:19:18.654 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 22 with PID 13792 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 13:19:18.661 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 13:19:18.849 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 13:19:18.869 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2026-07-04 13:19:18.963 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-04 13:19:18.963 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:19:18.963 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-04 13:19:18.963 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-04 13:19:18.991 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-04 13:19:18.991 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 328 ms
+2026-07-04 13:19:19.440 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 13:19:19.483 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-04 13:19:19.520 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 13:19:19.538 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-07-04 13:19:19.573 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a2a6645
+2026-07-04 13:19:19.621 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-07-04 13:19:19.725 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 13:19:19.736 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:19:19.957 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 13:19:20.110 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-04 13:19:20.404 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-04 13:19:20.417 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-04 13:19:20.441 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:19:20.453 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-04 13:19:20.465 INFO  c.c.UsageLog.UsageLogApplication - Started UsageLogApplication in 1.828 seconds (process running for 107.905)
+2026-07-04 13:19:20.467 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-04 13:19:21.850 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-04 13:19:21.850 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:19:21.865 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:19:21.867 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-07-04 13:19:21.877 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-07-04 13:19:21.966 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 22 with PID 13792 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 13:19:21.966 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 13:19:22.199 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 13:19:22.216 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2026-07-04 13:19:22.299 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-04 13:19:22.299 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:19:22.299 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-04 13:19:22.299 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-04 13:19:22.299 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-04 13:19:22.299 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 333 ms
+2026-07-04 13:19:22.400 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 13:19:22.400 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-04 13:19:22.416 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 13:19:22.416 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-07-04 13:19:22.424 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f89fc27
+2026-07-04 13:19:22.424 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-07-04 13:19:22.459 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 13:19:22.472 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:19:22.583 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 13:19:22.599 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-04 13:19:22.800 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-04 13:19:22.805 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-04 13:19:22.816 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:19:22.834 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-04 13:19:22.841 INFO  c.c.UsageLog.UsageLogApplication - Started UsageLogApplication in 0.892 seconds (process running for 110.282)
+2026-07-04 13:19:22.842 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-04 13:19:27.713 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-07-04 13:19:27.718 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:19:27.729 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:19:27.730 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-07-04 13:19:27.740 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-07-04 13:19:27.836 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 22 with PID 13792 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 13:19:27.836 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 13:19:28.017 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 13:19:28.029 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2026-07-04 13:19:28.117 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-04 13:19:28.118 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:19:28.118 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-04 13:19:28.118 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-04 13:19:28.131 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-04 13:19:28.131 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 293 ms
+2026-07-04 13:19:28.212 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 13:19:28.215 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-04 13:19:28.221 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 13:19:28.222 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2026-07-04 13:19:28.234 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53651d7c
+2026-07-04 13:19:28.234 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2026-07-04 13:19:28.286 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 13:19:28.293 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:19:28.418 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 13:19:28.434 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-04 13:19:28.691 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-04 13:19:28.697 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-04 13:19:28.711 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:19:28.719 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-04 13:19:28.723 INFO  c.c.UsageLog.UsageLogApplication - Started UsageLogApplication in 0.911 seconds (process running for 116.165)
+2026-07-04 13:19:28.725 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-04 13:20:02.784 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-04 13:20:02.787 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:20:02.790 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:20:02.791 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2026-07-04 13:20:02.796 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2026-07-04 13:20:02.900 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 22 with PID 13792 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 13:20:02.901 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 13:20:03.209 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 13:20:03.220 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2026-07-04 13:20:27.205 INFO  c.c.UsageLog.UsageLogApplication - Starting UsageLogApplication using Java 22 with PID 26108 (C:\workspace\UsageLog\target\classes started by chote in C:\workspace\UsageLog)
+2026-07-04 13:20:27.209 INFO  c.c.UsageLog.UsageLogApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 13:20:27.257 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-04 13:20:27.259 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-04 13:20:28.371 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 13:20:28.424 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2026-07-04 13:20:29.207 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-04 13:20:29.225 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:20:29.228 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-04 13:20:29.228 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-04 13:20:29.280 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-04 13:20:29.296 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2021 ms
+2026-07-04 13:20:29.672 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-04 13:20:29.733 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-04 13:20:29.761 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-04 13:20:29.988 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 13:20:30.010 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-04 13:20:30.289 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25c1d02c
+2026-07-04 13:20:30.305 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-04 13:20:31.055 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 13:20:31.096 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:20:31.315 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-04 13:20:32.124 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 13:20:32.157 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-04 13:20:32.640 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-04 13:20:32.659 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-07-04 13:20:32.708 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:20:32.730 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-04 13:20:32.747 INFO  c.c.UsageLog.UsageLogApplication - Started UsageLogApplication in 6.222 seconds (process running for 6.731)
+2026-07-04 13:20:40.414 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-04 13:20:40.415 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-04 13:20:40.417 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-04 13:20:49.059 INFO  c.c.UsageLog.service.UsageService - 購入内容：ＬＡＢＩＬＩＦＥＳＥＬＥＣＴ千
+2026-07-04 13:20:49.060 INFO  c.c.UsageLog.service.UsageService - 金額：53880
+2026-07-04 13:20:49.060 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 13:20:49.061 INFO  c.c.UsageLog.service.UsageService - 購入内容：FERIA
+2026-07-04 13:20:49.061 INFO  c.c.UsageLog.service.UsageService - 金額：5400
+2026-07-04 13:20:49.061 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 13:20:49.062 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾐﾉｵｷﾕ-ｽﾞﾓ-ﾙ
+2026-07-04 13:20:49.062 INFO  c.c.UsageLog.service.UsageService - 金額：3000
+2026-07-04 13:20:49.063 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 13:20:49.063 INFO  c.c.UsageLog.service.UsageService - 購入内容：AMAZON.CO.JP
+2026-07-04 13:20:49.064 INFO  c.c.UsageLog.service.UsageService - 金額：4794
+2026-07-04 13:20:49.064 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-31
+2026-07-04 13:20:49.064 INFO  c.c.UsageLog.service.UsageService - 購入内容：ニトリ
+2026-07-04 13:20:49.064 INFO  c.c.UsageLog.service.UsageService - 金額：6980
+2026-07-04 13:20:49.064 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-30
+2026-07-04 13:20:49.065 INFO  c.c.UsageLog.service.UsageService - 購入内容：AMAZON.CO.JP
+2026-07-04 13:20:49.065 INFO  c.c.UsageLog.service.UsageService - 金額：3382
+2026-07-04 13:20:49.065 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-30
+2026-07-04 13:20:49.066 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾌｱﾐﾘ-ﾏ-ﾄﾐﾉｵﾆｼｼﾞﾕ
+2026-07-04 13:20:49.066 INFO  c.c.UsageLog.service.UsageService - 金額：171
+2026-07-04 13:20:49.067 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-30
+2026-07-04 13:20:49.067 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾏｸﾄﾞﾅﾙﾄﾞﾓﾊﾞｲﾙｵ-ﾀ
+2026-07-04 13:20:49.067 INFO  c.c.UsageLog.service.UsageService - 金額：480
+2026-07-04 13:20:49.068 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-30
+2026-07-04 13:20:49.068 INFO  c.c.UsageLog.service.UsageService - 購入内容：APPLE COM BILL
+2026-07-04 13:20:49.068 INFO  c.c.UsageLog.service.UsageService - 金額：1280
+2026-07-04 13:20:49.069 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-29
+2026-07-04 13:20:49.069 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｻﾝﾃﾝﾐﾉｵﾆｼｼﾞﾕｸ
+2026-07-04 13:20:49.070 INFO  c.c.UsageLog.service.UsageService - 金額：2240
+2026-07-04 13:20:49.070 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-29
+2026-07-04 13:20:49.070 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾎ-ﾑｾﾝﾀ-ｺ-ﾅﾝ ﾐﾉｵｲ
+2026-07-04 13:20:49.070 INFO  c.c.UsageLog.service.UsageService - 金額：6226
+2026-07-04 13:20:49.070 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-27
+2026-07-04 13:20:49.071 INFO  c.c.UsageLog.service.UsageService - 購入内容：阪急オアシス
+2026-07-04 13:20:49.071 INFO  c.c.UsageLog.service.UsageService - 金額：2220
+2026-07-04 13:20:49.071 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-26
+2026-07-04 13:20:49.071 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｲｷﾅﾘｽﾃ-ｷﾗﾋ
+2026-07-04 13:20:49.071 INFO  c.c.UsageLog.service.UsageService - 金額：4480
+2026-07-04 13:20:49.071 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-26
+2026-07-04 13:20:49.071 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾎ-ﾑｾﾝﾀ-ｺ-ﾅﾝ ﾐﾉｵｲ
+2026-07-04 13:20:49.072 INFO  c.c.UsageLog.service.UsageService - 金額：3690
+2026-07-04 13:20:49.072 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-23
+2026-07-04 13:20:49.072 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｸｶﾞﾈ
+2026-07-04 13:20:49.073 INFO  c.c.UsageLog.service.UsageService - 金額：5560
+2026-07-04 13:20:49.073 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-20
+2026-07-04 13:20:49.073 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｽｷﾞﾔﾂｷﾖｸﾐﾉｵｲﾏﾐﾔﾃ
+2026-07-04 13:20:49.073 INFO  c.c.UsageLog.service.UsageService - 金額：1852
+2026-07-04 13:20:49.073 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 13:20:49.074 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾏﾙｶﾞﾒｾｲﾒﾝ ﾐﾉｵ/NF
+2026-07-04 13:20:49.074 INFO  c.c.UsageLog.service.UsageService - 金額：1020
+2026-07-04 13:20:49.074 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 13:20:49.074 INFO  c.c.UsageLog.service.UsageService - 購入内容：ニトリ
+2026-07-04 13:20:49.074 INFO  c.c.UsageLog.service.UsageService - 金額：8980
+2026-07-04 13:20:49.075 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 13:20:49.075 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾎ-ﾑｾﾝﾀ-ｺ-ﾅﾝ ﾐﾉｵｲ
+2026-07-04 13:20:49.075 INFO  c.c.UsageLog.service.UsageService - 金額：2402
+2026-07-04 13:20:49.075 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-17
+2026-07-04 13:20:49.075 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾛ-ｹﾞﾝﾏｲﾔ-ﾐﾉｵﾃﾝ/N
+2026-07-04 13:20:49.075 INFO  c.c.UsageLog.service.UsageService - 金額：1270
+2026-07-04 13:20:49.076 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-16
+2026-07-04 13:20:49.076 INFO  c.c.UsageLog.service.UsageService - 購入内容：楽天証券投信積立０．５％～
+2026-07-04 13:20:49.076 INFO  c.c.UsageLog.service.UsageService - 金額：60000
+2026-07-04 13:20:49.076 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-16
+2026-07-04 13:20:49.076 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾐﾉｵﾕﾓﾄｽｲｼﾕﾝ
+2026-07-04 13:20:49.076 INFO  c.c.UsageLog.service.UsageService - 金額：6410
+2026-07-04 13:20:49.076 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-13
+2026-07-04 13:20:49.077 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾝｷﾕｳｵｱｼｽ
+2026-07-04 13:20:49.077 INFO  c.c.UsageLog.service.UsageService - 金額：1998
+2026-07-04 13:20:49.077 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-11
+2026-07-04 13:20:49.077 INFO  c.c.UsageLog.service.UsageService - 購入内容：楽天モバイル通信料
+2026-07-04 13:20:49.077 INFO  c.c.UsageLog.service.UsageService - 金額：3281
+2026-07-04 13:20:49.077 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-11
+2026-07-04 13:20:49.077 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｼﾞｪｲﾄﾞｸﾞﾘ-ﾝｶﾌｪ
+2026-07-04 13:20:49.077 INFO  c.c.UsageLog.service.UsageService - 金額：720
+2026-07-04 13:20:49.078 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-10
+2026-07-04 13:20:49.078 INFO  c.c.UsageLog.service.UsageService - 購入内容：楽天ＳＰ　ＲＡＭイオンタウン須賀川
+2026-07-04 13:20:49.078 INFO  c.c.UsageLog.service.UsageService - 金額：10000
+2026-07-04 13:20:49.078 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-10
+2026-07-04 13:20:49.078 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾝｷｭｳｳﾒﾀﾞﾎﾝﾃﾝ
+2026-07-04 13:20:49.079 INFO  c.c.UsageLog.service.UsageService - 金額：5031
+2026-07-04 13:20:49.079 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-09
+2026-07-04 13:20:49.079 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｲﾀﾐｸｳｺｳﾀ-ﾐﾅﾙﾋﾞﾙ
+2026-07-04 13:20:49.079 INFO  c.c.UsageLog.service.UsageService - 金額：3710
+2026-07-04 13:20:49.079 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-09
+2026-07-04 13:20:49.079 INFO  c.c.UsageLog.service.UsageService - 購入内容：日本通信株式会社
+2026-07-04 13:20:49.079 INFO  c.c.UsageLog.service.UsageService - 金額：2395
+2026-07-04 13:20:49.080 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-08
+2026-07-04 13:20:49.080 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾐﾉｵｼｼﾐﾝﾌﾞﾏﾄﾞｸﾞﾁｶ
+2026-07-04 13:20:49.080 INFO  c.c.UsageLog.service.UsageService - 金額：900
+2026-07-04 13:20:49.080 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-07
+2026-07-04 13:20:49.080 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾐﾉｵｷﾕ-ｽﾞﾓ-ﾙ
+2026-07-04 13:20:49.080 INFO  c.c.UsageLog.service.UsageService - 金額：1269
+2026-07-04 13:20:49.080 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-07
+2026-07-04 13:20:49.080 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾕｶﾜｶｸﾞ ﾐﾉｵﾃﾝ/NFC
+2026-07-04 13:20:49.082 INFO  c.c.UsageLog.service.UsageService - 金額：190498
+2026-07-04 13:20:49.082 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-06
+2026-07-04 13:20:49.082 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾄｳﾎｳｼﾈﾏｽﾞｴｰﾋﾟｰ
+2026-07-04 13:20:49.082 INFO  c.c.UsageLog.service.UsageService - 金額：200
+2026-07-04 13:20:49.082 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-06
+2026-07-04 13:20:49.082 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾏｸﾄﾞﾅﾙﾄﾞ
+2026-07-04 13:20:49.083 INFO  c.c.UsageLog.service.UsageService - 金額：770
+2026-07-04 13:20:49.083 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-06
+2026-07-04 13:20:49.083 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾓﾊﾞｲﾙｲｺｶﾁﾔ-ｼﾞ
+2026-07-04 13:20:49.083 INFO  c.c.UsageLog.service.UsageService - 金額：5000
+2026-07-04 13:20:49.083 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-06
+2026-07-04 13:20:49.084 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾟﾃｲｽﾘ-ﾓﾝｼｴ-ﾙ ﾌｱ
+2026-07-04 13:20:49.084 INFO  c.c.UsageLog.service.UsageService - 金額：1206
+2026-07-04 13:20:49.084 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-05
+2026-07-04 13:20:49.084 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｻﾝﾃﾞｲ ﾐﾉｵｾﾝﾊﾞﾆｼﾃ
+2026-07-04 13:20:49.085 INFO  c.c.UsageLog.service.UsageService - 金額：2562
+2026-07-04 13:20:49.085 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-04
+2026-07-04 13:20:49.085 INFO  c.c.UsageLog.service.UsageService - 購入内容：APPLE COM BILL
+2026-07-04 13:20:49.085 INFO  c.c.UsageLog.service.UsageService - 金額：1500
+2026-07-04 13:20:49.085 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-03
+2026-07-04 13:20:49.085 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾝｷﾕｳｵｱｼｽ
+2026-07-04 13:20:49.085 INFO  c.c.UsageLog.service.UsageService - 金額：3056
+2026-07-04 13:20:49.085 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-03
+2026-07-04 13:20:49.086 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾗﾍﾟｺｻ-ｶｽ /ｱﾂﾌﾟﾙ
+2026-07-04 13:20:49.086 INFO  c.c.UsageLog.service.UsageService - 金額：1000
+2026-07-04 13:20:49.086 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:20:49.086 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾗﾍﾟｺｻ-ｶｽ /ｱﾂﾌﾟﾙ
+2026-07-04 13:20:49.086 INFO  c.c.UsageLog.service.UsageService - 金額：1000
+2026-07-04 13:20:49.086 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:20:49.086 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾗﾍﾟｺｻ-ｶｽ /ｱﾂﾌﾟﾙ
+2026-07-04 13:20:49.087 INFO  c.c.UsageLog.service.UsageService - 金額：1200
+2026-07-04 13:20:49.087 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:20:49.087 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾗﾍﾟｺｻ-ｶｽ /ｱﾂﾌﾟﾙ
+2026-07-04 13:20:49.087 INFO  c.c.UsageLog.service.UsageService - 金額：1200
+2026-07-04 13:20:49.087 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:20:49.087 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾌﾙﾎﾝｲﾁﾊﾞ ﾂﾙﾐﾃﾝ
+2026-07-04 13:20:49.087 INFO  c.c.UsageLog.service.UsageService - 金額：3466
+2026-07-04 13:20:49.088 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:20:49.088 INFO  c.c.UsageLog.service.UsageService - 購入内容：ﾊﾗﾍﾟｺｻ-ｶｽ
+2026-07-04 13:20:49.088 INFO  c.c.UsageLog.service.UsageService - 金額：1500
+2026-07-04 13:20:49.088 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:20:49.088 INFO  c.c.UsageLog.service.UsageService - 購入内容：ｺｶｺ-ﾗｼﾞﾊﾝｷｸｲﾂｸﾍﾟ
+2026-07-04 13:20:49.088 INFO  c.c.UsageLog.service.UsageService - 金額：140
+2026-07-04 13:20:49.089 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-02
+2026-07-04 13:20:49.089 INFO  c.c.UsageLog.service.UsageService - 購入内容：ローソンチケット
+2026-07-04 13:20:49.089 INFO  c.c.UsageLog.service.UsageService - 金額：6490
+2026-07-04 13:20:49.089 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-01
+2026-07-04 13:20:49.089 INFO  c.c.UsageLog.service.UsageService - 購入内容：楽天マガジン
+2026-07-04 13:20:49.089 INFO  c.c.UsageLog.service.UsageService - 金額：422
+2026-07-04 13:20:49.089 INFO  c.c.UsageLog.service.UsageService - 購入日：2026-05-01
+2026-07-04 13:26:24.813 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-04 13:26:24.813 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-07-04 13:26:24.829 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 13:26:24.829 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-04 13:26:24.829 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
