@@ -1,0 +1,112 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>エラー</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">📊 UsageLog</a>
+        <div class="navbar-nav">
+          <a class="nav-link" href="/">ホーム</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card border-danger shadow-sm">
+            <div class="card-header bg-danger text-white">
+              <h2 class="h4 mb-0">⚠️ エラーが発生しました</h2>
+            </div>
+            <div class="card-body">
+              <p class="fs-5">
+                ステータスコード:
+                <span class="badge bg-danger" th:text="${status}"></span>
+              </p>
+              <p><strong>エラー:</strong> <span th:text="${error}"></span></p>
+              <p>
+                <strong>メッセージ:</strong> <span th:text="${message}"></span>
+              </p>
+              <p><strong>要求パス:</strong> <span th:text="${path}"></span></p>
+              <p>
+                <strong>発生時刻:</strong> <span th:text="${timestamp}"></span>
+              </p>
+              <p>
+                <strong>例外クラス:</strong>
+                <span class="text-muted" th:text="${exceptionType}"></span>
+              </p>
+
+              <div class="mt-4">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="mb-0">スタックトレース</h5>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary btn-sm"
+                    id="copyTraceButton"
+                  >
+                    コピー
+                  </button>
+                </div>
+                <pre
+                  class="bg-dark text-light p-3 rounded"
+                  style="
+                    white-space: pre-wrap;
+                    word-break: break-word;
+                    max-height: 300px;
+                    overflow: auto;
+                  "
+                ><code id="stackTraceCode" th:text="${#strings.listJoin(trace, '\n')}"></code></pre>
+              </div>
+
+              <div class="mt-4">
+                <a href="/" class="btn btn-primary">ホームへ戻る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const copyButton = document.getElementById("copyTraceButton");
+        const traceCode = document.getElementById("stackTraceCode");
+
+        if (!copyButton || !traceCode) {
+          return;
+        }
+
+        copyButton.addEventListener("click", async function () {
+          const text = traceCode.textContent;
+
+          try {
+            await navigator.clipboard.writeText(text);
+            const originalText = copyButton.textContent;
+            copyButton.textContent = "コピー済み";
+            copyButton.classList.remove("btn-outline-secondary");
+            copyButton.classList.add("btn-success");
+
+            setTimeout(function () {
+              copyButton.textContent = originalText;
+              copyButton.classList.remove("btn-success");
+              copyButton.classList.add("btn-outline-secondary");
+            }, 1500);
+          } catch (error) {
+            console.error("コピーに失敗しました:", error);
+            alert("コピーに失敗しました。");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

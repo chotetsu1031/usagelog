@@ -101,8 +101,12 @@ public class UsageService {
 
       String line;
       boolean isFirstLine = true;
+      int lineNum = 0;
+      DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
 
       while ((line = reader.readLine()) != null) {
+        lineNum++;
+        log.info("行番号：{}", lineNum);
         String[] values = line.split(",");
         // 各列の前後のダブルクォートを除去
         for (int i = 0; i < values.length; i++) {
@@ -112,9 +116,15 @@ public class UsageService {
           isFirstLine = false; // 1行目はスキップ
           continue;
         }
-        if (values[0].isEmpty()) {
+        if (values[0].isBlank()) {
           continue; // 対象データ以外はスキップ
         }
+        try {
+          LocalDate.parse(values[0], dateFormatter);
+        } catch (Exception e) {
+          continue; // 日付形式でない行はスキップ
+        }
+
         CsvRecord record = new CsvRecord();
         log.info("購入内容：{}", values[1]);
         record.setDescription(values[1]);// 購入内容
@@ -146,12 +156,15 @@ public class UsageService {
 
       while ((line = reader.readLine()) != null) {
         lineNum++;
+        log.info("行番号：{}", lineNum);
         String[] values = line.split(",");
 
         if (lineNum < 9) { // 9行目以降がデータ
           continue;
         }
-
+        if (values[0].isBlank()) {
+          continue; // 対象データ以外はスキップ
+        }
         CsvRecord record = new CsvRecord();
         if (endStr.equals(values[0])) {
           break; // 対象データでないなら終了
