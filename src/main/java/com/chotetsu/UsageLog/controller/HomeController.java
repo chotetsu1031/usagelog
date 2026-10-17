@@ -8,7 +8,11 @@ public class HomeController {
 
   @GetMapping("/")
   public String home() {
-    // ルートディレクトリでindex.htmlを開く
     return "index";
+  }
+
+  @GetMapping("/upload")
+  public String upload() {
+    return "upload";
   }
 }
